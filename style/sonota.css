@@ -311,7 +311,7 @@ a.cards-link {
   }
   
   .cards-list {
-    width: calc(95% / 3);
+    width: calc(95% / 2);
   }
   .badch-w{
     display:inline-block;
