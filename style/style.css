@@ -115,7 +115,9 @@ body {
   text-decoration: none;
   color: white;
   border-radius: 5px;
-  padding: 0.8% 4%;
+  margin: 5px;
+  width: 20%;
+  padding: 1% 4%;
 }
 .twitter:active {
   top: 2px;
@@ -137,7 +139,9 @@ body {
   text-decoration: none;
   color: white;
   border-radius: 5px;
-  padding: 0.8% 4%;
+  margin: 5px;
+  width: 20%;
+  padding: 1% 4%;
 }
 .youtube:active {
   top: 2px;
@@ -159,7 +163,9 @@ body {
   text-decoration: none;
   color: white;
   border-radius: 5px;
-  padding: 0.8% 4%;
+  margin: 5px;
+  width: 20%;
+  padding: 1% 4%;
 }
 .ammot:active {
   top: 2px;
@@ -181,7 +187,9 @@ body {
   text-decoration: none;
   color: white;
   border-radius: 5px;
-  padding: 0.8% 4%;
+  margin: 5px;
+  width: 20%;
+  padding: 1% 4%;
 }
 .mash:active {
   top: 2px;
@@ -193,7 +201,7 @@ body {
 .disco {
   background-color: rgb(88,101,242);
   box-shadow: 0 4px 0 rgb(58,71,212);
-  
+
   display: inline;
   position: relative;
   font-family: 'Dela Gothic One', cursive;
@@ -203,7 +211,9 @@ body {
   text-decoration: none;
   color: white;
   border-radius: 5px;
-  padding: 0.8% 4%;
+  margin: 5px;
+  width: 20%;
+  padding: 1% 4%;
 }
 .disco:active {
   top: 2px;
@@ -225,7 +235,9 @@ body {
   text-decoration: none;
   color: white;
   border-radius: 5px;
-  padding: 0.8% 4%;
+  margin: 5px;
+  width: 20%;
+  padding: 1% 4%;
 }
 .github:active {
   top: 2px;
