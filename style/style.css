@@ -246,6 +246,30 @@ body {
 .github:hover {
   background-color: rgb(3,1,1);
 }
+.niconico {
+  background-color: #FAFAFA;
+  box-shadow: 0 4px 0 #e6e6e6;
+  
+  display: inline;
+  position: relative;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 21px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  color: #252525;
+  border-radius: 5px;
+  margin: 5px;
+  width: 20%;
+  padding: 1% 4%;
+}
+.niconico:active {
+  top: 2px;
+	box-shadow: 0 2px 0 #e6e6e6;
+}
+.niconico:hover {
+  background-color: #FAFAFA;
+}
 
 #cards {
   position: relative;
@@ -460,7 +484,7 @@ color:rgb(100,255,100)
     width: 60%;
     padding: 5% 15%;
     background-color: rgb(29, 155, 240);
-    box-shadow: 0 4px 0 rgb(9, 135, 210);
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
     
     font-family: 'Roboto', sans-serif;
     font-size: 2cm;
@@ -472,7 +496,7 @@ color:rgb(100,255,100)
   }
   .twitter:active {
     top: 2px;
-    box-shadow: 0 2px 0 rgb(9, 135, 210);
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
   }
   .twitter:hover {
     background-color: rgb(29, 155, 240);
@@ -484,7 +508,7 @@ color:rgb(100,255,100)
     width: 60%;
     padding: 5% 15%;
     background-color: rgb(255,0,0);
-    box-shadow: 0 4px 0 rgb(232,0,0);
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
     
     font-family: 'Anton', sans-serif;
     font-size: 2cm;
@@ -496,7 +520,7 @@ color:rgb(100,255,100)
   }
   .youtube:active {
     top: 2px;
-    box-shadow: 0 2px 0 rgb(255,0,0);
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
   }
   .youtube:hover {
     background-color: rgb(232,0,0);
@@ -508,7 +532,7 @@ color:rgb(100,255,100)
     width: 60%;
     padding: 5% 15%;
     background-color: rgb(19,10,34);
-    box-shadow: 0 4px 0 rgb(9,0,24);
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
     
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 2cm;
@@ -520,7 +544,7 @@ color:rgb(100,255,100)
   }
   .ammot:active {
     top: 2px;
-    box-shadow: 0 2px 0 rgb(9,0,24);
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
   }
   .ammot:hover {
     background-color: rgb(19,10,34);
@@ -532,7 +556,7 @@ color:rgb(100,255,100)
     width: 60%;
     padding: 5% 15%;
     background-color: rgb(243,150,154);
-    box-shadow: 0 4px 0 rgb(213,120,124);
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
     
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 2cm;
@@ -544,7 +568,7 @@ color:rgb(100,255,100)
   }
   .mash:active {
     top: 2px;
-    box-shadow: 0 2px 0 rgb(213,120,124);
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
   }
   .mash:hover {
     background-color: rgb(243,150,154);
@@ -556,7 +580,7 @@ color:rgb(100,255,100)
     width: 60%;
     padding: 5% 15%;
     background-color: rgb(88,101,242);
-    box-shadow: 0 4px 0 rgb(58,71,212);
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
     
     font-family: 'Dela Gothic One', cursive;
     font-size: 2cm;
@@ -568,7 +592,7 @@ color:rgb(100,255,100)
   }
   .disco:active {
     top: 2px;
-    box-shadow: 0 2px 0 rgb(58,71,212);
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
   }
   .disco:hover {
     background-color: rgb(88,101,242);
@@ -580,7 +604,7 @@ color:rgb(100,255,100)
     width: 60%;
     padding: 5% 15%;
     background-color: rgb(3,1,1);
-    box-shadow: 0 4px 0 rgb(23,21,21);
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
     
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 2cm;
@@ -592,11 +616,36 @@ color:rgb(100,255,100)
   }
   .github:active {
     top: 2px;
-    box-shadow: 0 2px 0 rgb(23,21,21);
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
   }
   .github:hover {
     background-color: rgb(3,1,1);
   }
+  .niconico {
+    display:inline-block;
+    align-items: center;
+    margin: 10px;
+    width: 60%;
+    padding: 5% 15%;
+    background-color: #FAFAFA;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
+
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+   font-size: 2cm;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    color: #252525;
+    border-radius: 15px;
+  }
+  .niconico:active {
+    top: 2px;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
+  }
+  .niconico:hover {
+    background-color: #FAFAFA;
+  }
+
 }
 @media (prefers-color-scheme: dark) {
 
