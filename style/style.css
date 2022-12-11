@@ -439,7 +439,7 @@ color:rgb(100,255,100)
   text-decoration: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 512px) {
   #header{
     height: 60px;
     width:auto;
