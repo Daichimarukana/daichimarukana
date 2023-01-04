@@ -290,7 +290,7 @@ body {
   padding: 1% 4%;
 }
 .modurili:active {
-  top: 2px;
+ top:7mm;
 	box-shadow: 0 2px 0 #1c8113;
 }
 .modurili:hover {
@@ -315,7 +315,7 @@ body {
   padding: 1% 4%;
 }
 .kouchagayu:active {
-  top: 2px;
+ top:7mm;
 	box-shadow: 0 2px 0 #9b0b17;
 }
 .kouchagayu:hover {
