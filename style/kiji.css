@@ -44,6 +44,29 @@ font-family: 'Mochiy Pop One', sans-serif;
 background-color: rgb(245, 31, 117);
 }
 
+.dbutton {
+  background-color: #00b4d8;
+  box-shadow: 0 4px 0 #0077b6;
+  display: inline;
+  position: relative;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 21px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  margin: 5px;
+  border-radius: 5px;
+  width: 20%;
+  padding: 1% 4%;
+}
+.dbutton:active {
+	box-shadow: 0 2px 0 #0077b6;
+}
+.dbutton:hover {
+  background-color: #00b4d8;
+}
+
 .area {
   margin-top:3%;
   margin-left:18%;
@@ -57,7 +80,7 @@ background-color: rgb(245, 31, 117);
   border-radius: 10px 10px 10px 10px;
 }
 .sukima{
-  margin-top:100px;
+  margin-top:40px;
   
 }
 .badch-w{
@@ -166,10 +189,12 @@ p3{
   font-size: 5mm;
 }
 img{
+  margin-top: 10px;
   margin-left: 2%;
   margin-right: auto; 
+  width: 200px;
+  height: auto;
   display: block;
-  width: 95%;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, .1);
 }
@@ -209,6 +234,31 @@ img{
 }
 
 @media screen and (max-width: 1200px) {
+  .dbutton {
+    display:inline-block;
+    align-items: center;
+    margin: 10px;
+    width: 60%;
+    padding: 5% 18%;
+    background-color: #00b4d8;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
+
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+   font-size: 2cm;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    border-radius: 15px;
+  }
+  .dbutton:active {
+    top: 2px;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
+  }
+  .dbutton:hover {
+    background-color: #00b4d8;
+  }
+
   .area {
     margin-top:3%;
     margin-left:auto;
@@ -221,12 +271,15 @@ img{
     box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
     border-radius: 10px 10px 10px 10px;
   }
+  p{
+    padding-bottom: 10px;
+  }
   p3{
     margin-left: 10px;
     font-family: 'Mochiy Pop One', sans-serif;
     color:rgb(245, 31, 117);
     text-align:left;
-    font-size: 300%;
+    font-size: 500%;
   }
   .mmain{
     line-height: 15px;
@@ -234,7 +287,7 @@ img{
     font-family: 'Noto Sans JP', sans-serif;
     color:rgb(64,64,64);
     text-align:left;
-    font-size: 4mm;
+    font-size: 10mm;
   }
   
   .date{
@@ -242,7 +295,7 @@ img{
     font-family: 'Roboto', sans-serif;
     color:rgb(100,100,100);
     text-align:left;
-    font-size: 5mm;
+    font-size: 10mm;
   }
   .badch-w{
     display:inline-block;
