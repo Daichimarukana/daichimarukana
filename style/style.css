@@ -290,11 +290,11 @@ body {
   padding: 1% 4%;
 }
 .modurili:active {
- top:7mm;
+ top:6mm;
 	box-shadow: 0 2px 0 #1c8113;
 }
 .modurili:hover {
-top:7mm;
+top:6mm;
   background-color: #2dce1e;
 }
 
@@ -316,11 +316,11 @@ top:7mm;
   padding: 1% 4%;
 }
 .kouchagayu:active {
- top:7mm;
+ top:6mm;
 	box-shadow: 0 2px 0 #9b0b17;
 }
 .kouchagayu:hover {
-top:7mm;
+top:6mm;
   background-color: #ff5353;
 }
 /*end*/
