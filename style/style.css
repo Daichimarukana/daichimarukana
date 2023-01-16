@@ -151,8 +151,8 @@ body {
   background-color: rgb(232,0,0);
 }
 .ammot {
-  background-color: rgb(19,10,34);
-  box-shadow: 0 4px 0 rgb(9,0,24);
+  background-color: rgb(12,12,12);
+  box-shadow: 0 4px 0 rgb(0,0,0);
   
   display: inline;
   position: relative;
@@ -169,10 +169,10 @@ body {
 }
 .ammot:active {
   top: 2px;
-	box-shadow: 0 2px 0 rgb(9,0,24);
+	box-shadow: 0 2px 0 rgb(0,0,0);
 }
 .ammot:hover {
-  background-color: rgb(19,10,34);
+  background-color: rgb(12,12,12);
 }
 .mash {
   background-color: rgb(243,150,154);
