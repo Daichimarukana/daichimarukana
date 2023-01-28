@@ -371,7 +371,7 @@ a.cards-link {
   padding: 0;
   width: 96%;
   background: rgb(255,255,255);
-  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .3);
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
   border-radius: 10px 10px 10px 10px;
 }
 
