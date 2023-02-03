@@ -2,6 +2,29 @@
   background: rgb(255, 101, 157);
   color: rgb(255,255,255);
 }
+.OMG{
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  background-color: rgb(255,68,68);
+  border-radius: 16px;
+  font-family: 'M PLUS 1p', sans-serif;
+  color:#ffffff;
+  font-size: 2em;
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+}
+f1{
+  font-family: 'M PLUS 1p', sans-serif;
+  line-height: 6px;
+  font-size: 20px;
+}
+f1 a{
+  color: rgb(220,220,220);
+  text-decoration: none;
+}
 #header{
   height: 40px;
   width:auto;
@@ -495,6 +518,42 @@ color:rgb(100,255,100)
 }
 
 @media screen and (max-width: 1024px) {
+
+
+  .area {
+    width: auto;
+    height: auto;
+    padding: 50px;
+    background-color: rgb(255,255,255);
+    overflow: hidden;
+    box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+    border-radius: 16px;
+  }
+
+  .OMG{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    background-color: rgb(255,68,68);
+    border-radius: 16px;
+    font-family: 'M PLUS 1p', sans-serif;
+    color:#ffffff;
+    font-size: 2em;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+  }
+  f1{
+    font-family: 'M PLUS 1p', sans-serif;
+    line-height: 6px;
+    font-size: 20px;
+  }
+  f1 a{
+    color: rgb(220,220,220);
+    text-decoration: none;
+  }
+
   #header{
     height: 60px;
     width:auto;
