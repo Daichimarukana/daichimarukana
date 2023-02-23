@@ -91,6 +91,7 @@ background-color: rgb(245, 31, 117);
 .badch-w{
   display:inline-block;
   margin: 10px -5px 10px 10px;
+  margin-bottom: 5px;
   background-color: rgb(30,144,255);
   padding: 5px 10px;
   font-family: 'M PLUS 1 Code', sans-serif;
@@ -102,6 +103,7 @@ background-color: rgb(245, 31, 117);
 .badch-l{
   display:inline-block;
   margin: 10px -5px 10px 10px;
+  margin-bottom: 5px;
   background-color: rgb(248,180,0);
   padding: 5px 10px;
   font-family: 'M PLUS 1 Code', sans-serif;
@@ -113,6 +115,7 @@ background-color: rgb(245, 31, 117);
 .badch-m{
   display:inline-block;
   margin: 10px -5px 10px 10px;
+  margin-bottom: 5px;
   background-color: rgb(	220,20,60);
   padding: 5px 10px;
   font-family: 'M PLUS 1 Code', sans-serif;
@@ -124,6 +127,7 @@ background-color: rgb(245, 31, 117);
 .badch-v{
   display:inline-block;
   margin: 10px -5px 10px 10px;
+  margin-bottom: 5px;
   background-color: rgb(38, 41, 80);
   padding: 5px 10px;
   font-family: 'M PLUS 1 Code', sans-serif;
@@ -135,6 +139,7 @@ background-color: rgb(245, 31, 117);
 .badch-h{
   display:inline-block;
   margin: 10px -5px 10px 10px;
+  margin-bottom: 5px;
   background-color: rgb(45, 170, 149);
   padding: 5px 10px;
   font-family: 'M PLUS 1 Code', sans-serif;
@@ -146,6 +151,7 @@ background-color: rgb(245, 31, 117);
 .badch-a{
   display:inline-block;
   margin: 10px -5px 10px 10px;
+  margin-bottom: 5px;
   background-color: rgb(0, 255, 136);
   padding: 5px 10px;
   font-family: 'M PLUS 1 Code', sans-serif;
@@ -157,6 +163,7 @@ background-color: rgb(245, 31, 117);
 .badch-s{
   display:inline-block;
   margin: 10px -5px 10px 10px;
+  margin-bottom: 5px;
   background-color: rgb(99, 45, 170);
   padding: 5px 10px;
   font-family: 'M PLUS 1 Code', sans-serif;
@@ -168,6 +175,7 @@ background-color: rgb(245, 31, 117);
 .badch-i{
   display:inline-block;
   margin: 10px -5px 10px 10px;
+  margin-bottom: 5px;
   background-color: rgb(32,32,32);
   padding: 5px 10px;
   font-family: 'M PLUS 1 Code', sans-serif;
