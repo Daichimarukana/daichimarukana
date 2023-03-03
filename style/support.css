@@ -1,0 +1,405 @@
+::selection {
+  background: rgb(255, 101, 157);
+  color: rgb(255,255,255);
+}
+.OMG{
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  background-color: rgb(255,68,68);
+  border-radius: 16px;
+  font-family: 'M PLUS 1p', sans-serif;
+  color:#ffffff;
+  font-size: 2em;
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+}
+
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  background-color: rgb(255,255,255);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 2em;
+  text-align: center;
+  color: rgb(245, 31, 117);
+  text-decoration: none;
+  }
+
+h2{
+  margin-top: 10px;
+  font-size: 200%;
+}
+
+.sitasen a{
+  color: rgb(64,64,64);
+  text-decoration: none;
+}
+
+h1{
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 2.6em;
+  color: rgb(32,32,32);
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  text-decoration: none;
+}
+
+p{
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 1.2em;
+  color: rgb(64,64,64);
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  text-decoration: none;
+}
+
+h2{
+  font-size: 5em;
+  font-family: 'Mochiy Pop One', sans-serif;
+  color:rgb(32,32,32);
+  text-shadow: 0 0 5px rgba(0, 0, 0, .1);
+  text-align:center;
+}
+
+
+body {
+  background-color:#252530;
+  width: 1050px;
+margin-right:auto;
+margin-left:auto;
+padding: 50px 10px 50px 10px;
+
+}
+
+.fter{
+  margin-top: -10px;
+  margin-bottom: -10px;
+  width: auto;
+  height: auto;
+
+  background-color: rgb(255,255,255);
+  color:rgb(245, 31, 117);
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 22px;
+  text-align: left;
+  padding-left: 10px;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.notsita{
+  color:rgb(245, 31, 117);
+  text-decoration: none;
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Mochiy Pop One', sans-serif;
+  color: #ecf0f1;
+  font-size: 17px;
+  background-color: #e67e22;
+  border: 1px solid #f39c12;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 6px 0px #d35400;
+  transition: all .1s;
+ }
+ 
+ .button:active {
+  box-shadow: 0px 2px 0px #d35400;
+  position: relative;
+  top: 2px;
+ }
+
+ main{
+  display: block;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+font-family: 'M PLUS 1p', sans-serif;
+padding: 3%;
+color: rgb(32,32,32);
+text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+ }
+
+.inmain{
+  margin-top: 2em;
+
+  display: flex;
+  border : solid 1px #ccc;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .2);
+font-family: 'M PLUS 1p', sans-serif;
+color: rgb(32,32,32);
+text-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+text-align: left;
+}
+.inmain h1{
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size:3em;
+  padding: 3px;
+  color: rgb(32,32,32);
+  text-align: center;
+}
+
+.inmain p{
+  margin-left:1em;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size:1em;
+  padding: 3px;
+  color: rgb(32,32,32);
+  text-align: left;
+}
+
+.inmain img{
+  margin: 20px;
+    justify-content: space-between;
+    width: 5em;
+    height:5em;
+    border-radius: 50%;
+}
+
+.material-symbols-outlined.px48{
+  font-size:48px;
+}
+
+.inmain good{
+  margin: auto 20px auto auto;
+  width: 5em;
+  height:5em;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px #20c25673;
+  background: linear-gradient(to bottom right,#3bd671, #20c256);
+  color:#fff;
+  line-height: 7.3em;
+  text-align: center;
+  
+}
+
+.inmain bad{
+  margin: auto 20px auto auto;
+  width: 5em;
+  height:5em;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px #c2202073;
+  background: linear-gradient(to bottom right,#d63b3b, #c22020);
+  color:#fff;
+  line-height: 7.3em;
+  text-align: center;
+}
+
+.inmain chu{
+  margin: auto 20px auto auto;
+  width: 5em;
+  height:5em;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px #f2913094;
+  background: linear-gradient(to bottom right,#ffb232, #f29030);
+  color:#fff;
+  line-height: 7.3em;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+
+  body {
+    background-color:#252530;
+    width: auto;
+  margin-right:auto;
+  margin-left:auto;
+  padding: 50px 10px 50px 10px;
+  
+  }
+
+  main{
+    display: block;
+    margin-top: 10em;
+    margin-bottom: 3em;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+  font-family: 'M PLUS 1p', sans-serif;
+  padding: 3%;
+  color: rgb(32,32,32);
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+   }
+
+   .inmain{
+    margin-top: 2em;
+  
+    display: flex;
+    border : solid 2px #ccc;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .2);
+  font-family: 'M PLUS 1p', sans-serif;
+  color: rgb(32,32,32);
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+  text-align: left;
+  }
+  .inmain h1{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size:5.4em;
+    padding: 3px;
+    color: rgb(32,32,32);
+    text-align: center;
+  }
+  
+  .inmain p{
+    margin-left:1em;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size:2em;
+    padding: 3px;
+    color: rgb(32,32,32);
+    text-align: left;
+  }
+  
+  .inmain img{
+    margin: 30px;
+      justify-content: space-between;
+      width: 9em;
+      height:9em;
+      border-radius: 50%;
+  }
+  
+  .material-symbols-outlined.px48{
+    font-size:82px;
+  }
+  
+  .inmain good{
+    margin: auto 30px auto auto;
+    width: 7em;
+    height:7em;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #20c25673;
+    background: linear-gradient(to bottom right,#3bd671, #20c256);
+    color:#fff;
+    line-height: 11.4em;
+    text-align: center;
+    
+  }
+  
+  .inmain bad{
+    margin: auto 30px auto auto;
+    width: 7em;
+    height:7em;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #c2202073;
+    background: linear-gradient(to bottom right,#d63b3b, #c22020);
+    color:#fff;
+    line-height: 11.4em;
+    text-align: center;
+  }
+  
+  .inmain chu{
+    margin: auto 30px auto auto;
+    width: 7em;
+    height:7em;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #f2913094;
+    background: linear-gradient(to bottom right,#ffb232, #f29030);
+    color:#fff;
+    line-height: 11.4em;
+    text-align: center;
+  }
+
+  h2{
+    font-size: 7em;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color:rgb(32,32,32);
+    text-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    text-align:center;
+  }
+
+  h1{
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 5em;
+    text-align: left;
+    color: rgb(32,32,32);
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    text-decoration: none;
+  }
+
+  p{
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 3em;
+    text-align: left;
+    color: rgb(64,64,64);
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    text-decoration: none;
+  }
+
+  
+  .button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: #ecf0f1;
+    font-size: 5em;
+    background-color: #e67e22;
+    border: 1px solid #f39c12;
+    border-radius: 16px;
+    padding: 100px;
+    box-shadow: 0px 16px 0px #d35400;
+    transition: all .1s;
+   }
+   
+   .button:active {
+    box-shadow: 0px 2px 0px #d35400;
+    position: relative;
+    top: 2px;
+   }
+
+    .fter{
+      margin-top: -10px;
+      margin-bottom: -10px;
+      width: auto;
+      height: auto;
+    
+      background-color: rgb(255,255,255);
+      color:rgb(245, 31, 117);
+      font-family: 'M PLUS 1p', sans-serif;
+      font-size: 3em;
+      text-align: center;
+      padding-left: 10px;
+      box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+      border-radius: 25px;
+    }
+  
+  .Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  background-color: rgb(255,255,255);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 5em;
+  text-align: center;
+  color: rgb(245, 31, 117);
+  text-decoration: none;
+  }
+
+  }
