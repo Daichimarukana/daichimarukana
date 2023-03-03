@@ -166,6 +166,11 @@ text-align: left;
   text-align: left;
 }
 
+.inmain a{
+  color:rgb(120,120,120);
+  text-decoration: none;
+}
+
 .inmain img{
   margin: 20px;
     justify-content: space-between;
