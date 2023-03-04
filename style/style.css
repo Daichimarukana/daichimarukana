@@ -318,6 +318,31 @@ body {
   background-color: rgb(0, 150, 250);
 }
 
+.qiita {
+  background-color: #55c500;
+  box-shadow: 0 4px 0 #337800;
+  
+  display: inline;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px;
+  width: 20%;
+  padding: 1% 4%;
+}
+.qiita:active {
+  top: 2px;
+	box-shadow: 0 2px 0 #337800;
+}
+.qiita:hover {
+  background-color: #55c500;
+}
+
 .service {
   margin-top:20px;
   margin-left: auto;
@@ -848,6 +873,31 @@ color:rgb(100,255,100)
   }
   .pixiv:hover {
     background-color: rgb(0, 150, 250);
+  }
+	
+.qiita {
+    display:inline-block;
+    align-items: center;
+    margin: 10px;
+    width: 60%;
+    padding: 5% 15%;
+    background-color: 55c500;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
+
+    font-family: 'Roboto', sans-serif;
+   font-size: 2cm;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+  }
+  .qiita:active {
+    top: 2px;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
+  }
+  .qiita:hover {
+    background-color: 55c500;
   }
 
   .service {
