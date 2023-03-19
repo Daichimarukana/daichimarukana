@@ -1,0 +1,632 @@
+::selection {
+  background: rgb(255, 101, 157);
+  color: rgb(255,255,255);
+}
+.OMG{
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  background-color: rgb(255,68,68);
+  border-radius: 16px;
+  font-family: 'M PLUS 1p', sans-serif;
+  color:#ffffff;
+  font-size: 2em;
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+}
+
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #5865f2;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 2em;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  }
+
+h2{
+  margin-top: 10px;
+  font-size: 200%;
+}
+
+.sitasen a{
+  color: rgb(64,64,64);
+  text-decoration: none;
+}
+
+h1{
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 2.6em;
+  color: rgb(35,39,42);
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+
+p{
+  font-family: 'BIZ UDGothic', sans-serif;
+  font-size: 1.2em;
+  color: rgb(35,39,42);
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+
+h2{
+  font-size: 1.6em;
+  font-family: 'M PLUS 1p', sans-serif;
+  color:rgb(35,39,42);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align:left;
+}
+
+.inmain a{
+  color:rgb(245, 31, 117);
+  text-decoration: none;
+}
+
+
+body {
+  
+  background-color:rgb(35,39,42);;
+  width: 1050px;
+margin-right:auto;
+margin-left:auto;
+padding: 50px 10px 50px 10px;
+
+}
+
+.fter{
+  margin-top: -10px;
+  margin-bottom: -10px;
+  width: auto;
+  height: auto;
+
+  background-color: rgb(255,255,255);
+  color:rgb(245, 31, 117);
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 22px;
+  text-align: left;
+  padding-left: 10px;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.notsita{
+  color:rgb(245, 31, 117);
+  text-decoration: none;
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Mochiy Pop One', sans-serif;
+  color: #ecf0f1;
+  font-size: 17px;
+  background-color: #e67e22;
+  border: 1px solid #f39c12;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 6px 0px #d35400;
+  transition: all .1s;
+ }
+ 
+ .button:active {
+  box-shadow: 0px 2px 0px #d35400;
+  position: relative;
+  top: 2px;
+ }
+
+ main{
+  display: block;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+font-family: 'M PLUS 1p', sans-serif;
+word-wrap: break-word;
+padding: 3%;
+color: rgb(32,32,32);
+text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+ }
+
+.inmain{
+  margin-top: 2em;
+
+  display: flex;
+  border : solid 1px #ccc;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .2);
+  font-family: 'Kosugi', sans-serif;
+color: rgb(32,32,32);
+text-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+text-align: left;
+width: 100%;
+word-wrap: break-word;
+}
+.inmain h1{
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Kosugi', sans-serif;
+  font-size:3em;
+  padding: 3px;
+  color: rgb(32,32,32);
+  text-align: center;
+  width: 60%;
+  word-wrap: break-word;
+}
+
+.inmain p{
+  margin: auto 2em auto auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Kosugi', sans-serif;
+  font-size:1em;
+  padding: 3px;
+  color: rgb(32,32,32);
+  text-align: left;
+}
+
+.inmain a{
+  color:rgb(120,120,120);
+  text-decoration: none;
+}
+
+.daichiserv{
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  overflow: hidden;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.serv-serv {
+  width: 10%;
+height: 10%;
+  border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+}
+.d-serv {
+  width: 10%;
+height: 10%;
+  border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+}
+
+/* 送信ボタン */
+
+.regist-on {
+  display: block;
+  padding: 7px 25px;
+  border-radius: 7px;
+  border: none;
+  background-color: rgb(88,101,242);
+  box-shadow: 0 4px 0 rgb(58,71,212);
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 0.8% 4%;
+  cursor: pointer;
+  appearance: none;
+  }
+.regist-on[disabled] {
+  display: block;
+  padding: 7px 25px;
+  border-radius: 7px;
+  border: none;
+  background-color: #c5c5c5;
+  box-shadow: 0 4px 0 #c2c2c2;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 0.8% 4%;
+  cursor: not-allowed; /* クリック不可のカーソルを表示 */
+  appearance: none;
+  }
+
+.material-symbols-outlined.px48{
+  font-size:48px;
+}
+
+.inputbox{
+  background-color: #f9f9f9;
+  width: 300px;
+  height: 74px;
+  border : solid 1px #ccc;
+  border-radius: 3px; 
+}
+
+input[type=checkbox] {
+  display: none; 
+}   
+
+/*ボックス枠のCSS*/
+.label_test:after {
+ position: absolute; 
+ content: ""; 
+ display: block; 
+ top: 50%; 
+ left: 15px; 
+ width: 24px;
+ height: 24px;
+ border: 2px solid #c1c1c1; 
+ border-radius: 10%; 
+}
+
+.label_test {
+ position: relative; 
+}
+
+label span {
+  text-shadow: 0 0px 25px 0 rgba(0, 0, 0, .0);
+  font-size: 20px;
+  font-family: 'Kosugi', sans-serif;
+  display:inline-flex;
+  margin-top: 0px;
+  margin-left: 60px;
+  color: #000;
+}
+
+label p {
+  text-shadow: 0 0px 25px 0 rgba(0, 0, 0, .0);
+  font-size: 10px;
+  font-family: 'Kosugi', sans-serif;
+  display:inline-flex;
+  margin-top: -20px;
+  margin-left: 120px;
+  color: #000;
+}
+
+label img{
+  margin-left: 40px;
+  margin-top: 12px;
+  width: 12%;
+  height: 12%;
+  border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+}
+
+.label_test:hover:after {
+ border-color: #b2b2b2; 
+}
+ .label_test:after, .label_test:before{
+ position: absolute; 
+ content: ""; 
+ display: block; 
+ top:-8px; 
+ }
+/*チェックマークの追加*/
+ .label_test:before {
+  z-index: 1;
+     left: 20px; 
+     margin-top: -10px; 
+     width: 14px; 
+     height: 24px; 
+     border-right: 4px solid #009e55; 
+     border-bottom: 4px solid #009e55; 
+     transform: rotate(45deg); 
+     opacity: 0; 
+ }
+ /*チェックボックスがチェックされた時に動作する内容*/
+ input[type=checkbox]:checked + .label_test:before {
+ opacity: 1; 
+ }
+.sukima{
+  margin-top:40px;
+}
+
+@media screen and (max-width: 1024px) {
+
+  body {
+    background-color:#252530;
+    width: auto;
+  margin-right:auto;
+  margin-left:auto;
+  padding: 50px 10px 50px 10px;
+  
+  }
+
+  main{
+    
+    display: block;
+    margin-top: 10em;
+    margin-bottom: 3em;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+  font-family: 'M PLUS 1p', sans-serif;
+  padding: 3%;
+  color: rgb(32,32,32);
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+   }
+
+   .inmain{
+    margin-top: 2em;
+  
+    display: flex;
+    border : solid 2px #ccc;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .2);
+  font-family: 'M PLUS 1p', sans-serif;
+  color: rgb(32,32,32);
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+  text-align: left;
+  width: 100%;
+  word-wrap: break-word;
+  }
+  
+  .material-symbols-outlined.px48{
+    font-size:82px;
+  }
+
+  .daichiserv{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .serv-serv {
+    width: 30%;
+  height: 30%;
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    margin-top: 100px;
+    padding: 0;
+    box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+  }
+  .d-serv {
+    width: 10%;
+  height: 10%;
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+  }
+
+
+  h2{
+    font-size: 3em;
+    font-family: 'M PLUS 1p', sans-serif;
+    color:rgb(35,39,42);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align:left;
+  }
+
+  h1{
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 5em;
+    text-align: left;
+    color: rgb(32,32,32);
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    text-decoration: none;
+  }
+
+  p{
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 1.4em;
+    text-align: left;
+    color: rgb(64,64,64);
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    text-decoration: none;
+  }
+
+  
+  .button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: #ecf0f1;
+    font-size: 5em;
+    background-color: #e67e22;
+    border: 1px solid #f39c12;
+    border-radius: 16px;
+    padding: 100px;
+    box-shadow: 0px 16px 0px #d35400;
+    transition: all .1s;
+   }
+   
+   .button:active {
+    box-shadow: 0px 2px 0px #d35400;
+    position: relative;
+    top: 2px;
+   }
+
+    .fter{
+      margin-top: -10px;
+      margin-bottom: -10px;
+      width: auto;
+      height: auto;
+    
+      background-color: rgb(255,255,255);
+      color:rgb(245, 31, 117);
+      font-family: 'M PLUS 1p', sans-serif;
+      font-size: 3em;
+      text-align: center;
+      padding-left: 10px;
+      box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+      border-radius: 25px;
+    }
+  
+  .Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  background-color: rgb(255,255,255);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 5em;
+  text-align: center;
+  color: rgb(245, 31, 117);
+  text-decoration: none;
+  }
+
+  /* 送信ボタン */
+
+.regist-on {
+  width: 700px;
+  height: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  padding: auto;
+  border-radius: 7px;
+  border: none;
+  background-color: rgb(88,101,242);
+  box-shadow: 0 4px 0 rgb(58,71,212);
+  font-family: 'Roboto', sans-serif;
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  appearance: none;
+  }
+.regist-on[disabled] {
+  width: 700px;
+  height: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  padding: auto;
+  border-radius: 7px;
+  border: none;
+  background-color: #c5c5c5;
+  box-shadow: 0 4px 0 #c2c2c2;
+  font-family: 'Roboto', sans-serif;
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 15px;
+  cursor: not-allowed; /* クリック不可のカーソルを表示 */
+  appearance: none;
+  }
+
+.material-symbols-outlined.px48{
+  font-size:48px;
+}
+
+.inputbox{
+  background-color: #f9f9f9;
+  width: auto;
+  height: 300px;
+  border : solid 3px #ccc;
+  border-radius: 10px; 
+}
+
+input[type=checkbox] {
+  display: none; 
+}   
+
+/*ボックス枠のCSS*/
+.label_test:after {
+ position: absolute; 
+ content: ""; 
+ display: block; 
+ top: 50px; 
+ left: 75px; 
+ width: 74px;
+ height: 74px;
+ border: 5px solid #c1c1c1; 
+ border-radius: 10%; 
+}
+
+.label_test {
+ position: relative; 
+}
+
+label span {
+  text-shadow: 0 0px 25px 0 rgba(0, 0, 0, .0);
+  font-size: 3em;
+  font-family: 'Kosugi', sans-serif;
+  display:inline-flex;
+  margin-top: 110px;
+  margin-left: 220px;
+  color: #000;
+}
+
+label p {
+  text-shadow: 0 0px 25px 0 rgba(0, 0, 0, .0);
+  font-size: 2em;
+  font-family: 'Kosugi', sans-serif;
+  display:inline-flex;
+  margin-top: 70px;
+  margin-left: 320px;
+  color: #000;
+}
+
+label img{
+  margin-left: 670px;
+  margin-top: -148px;
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+}
+
+.label_test:hover:after {
+ border-color: #b2b2b2; 
+}
+ .label_test:after, .label_test:before{
+ position: absolute; 
+ content: ""; 
+ display: block; 
+ top:-8px; 
+ }
+/*チェックマークの追加*/
+ .label_test:before {
+  z-index: 1;
+     left: 90px; 
+     margin-top: -30px; 
+     width: 50px; 
+     height: 70px; 
+     border-right: 10px solid #009e55; 
+     border-bottom: 10px solid #009e55; 
+     transform: rotate(45deg); 
+     opacity: 0; 
+ }
+ /*チェックボックスがチェックされた時に動作する内容*/
+ input[type=checkbox]:checked + .label_test:before {
+ opacity: 1; 
+ }
+
+  }

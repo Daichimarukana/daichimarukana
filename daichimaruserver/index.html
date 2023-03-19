@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+          var agent = navigator.userAgent; //iPhone用の記述
+          if(agent.search(/iPhone/) != -1){
+                  $("#apple").text("当サイトへ訪問していただきありがとうございます。\n当サイトはiOSでの表示に対応しておりませんのでレイアウトが崩れることがあります。\nご了承くださいませ。");
+                  $('#apple').html($('<dummy>').text(str).html().replace(/\n/g, '<br>'));
+          }else if(agent.search(/Android/) != -1){　//Android用の記述
+                  $("#google").text("当サイトへ訪問していただきありがとうございます。\n当サイトはAndroid OSでの表示に対応しておりませんのでレイアウトが崩れることがあります。\nご了承くださいませ。");
+                  $('#google').html($('<dummy>').text(str).html().replace(/\n/g, '<br>'));
+          }else if(agent.search(/iPad/) != -1){　//Android用の記述
+                  $("#google").text("当サイトへ訪問していただきありがとうございます。\n当サイトはiPad OSでの表示に対応しておりませんのでレイアウトが崩れることがあります。\nご了承くださいませ。");
+                  $('#google').html($('<dummy>').text(str).html().replace(/\n/g, '<br>'));
+     }
+  });
+
+  </script>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" type="image/png" href="img/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="img/icon-192x192.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dela+Gothic+One&family=M+PLUS+1p:wght@800&family=Mochiy+Pop+One&family=Noto+Sans+JP:wght@700&family=Roboto:wght@900&family=Kosugi&family=BIZ+UDGothic:wght@700&display=swap" rel="stylesheet">   
+    <title>だいちまる鯖 - だいちまるのさいと</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet" href="server.css" />
+  </head>
+  <body>
+    <a class="Header" href="https://daichimarukana.com/#area-4">
+      <div>だいちまる鯖</div>
+    </a>
+
+    <div class="daichiserv">
+          <div class="serv-image">
+            <img src="だいちまる鯖(本).png" alt="Join to server" class="serv-serv">
+          </div>
+    </div>
+
+    
+    <main>
+        <h1>だいちまる鯖へのご案内</h1>
+        <h2>最後までお読み下さい。</h2>
+        <p>だいちまる鯖に入るにあたって必要なもの一覧</p>
+        <p>Discordアカウント<br>動作するDiscord対応デバイス</p>
+        <p>入るにあたって守っていただければならないルール</p>
+        <p>だいちまる鯖 ルールチャンネルより ---<br>異常なほどのフォロー勧誘とか鯖荒らしはもちろん、詐欺リンクなどの貼り付けもやめてね！<br>あとはeveryoneするときは全員に通知が行って迷惑と感じる人がいるかもなので要注意！<br>最低限のマナーは守ろうね！ <br>-------------------------------------</p>
+        <p>BAN等の対処について</p>
+        <p>上に記載しましたルールに反する行為をした場合や、私だいちまるがやってはいけないと認識するような行為をした場合はタイムアウト・追放・BANさせていただく場合がございます。<br>また、「これはダメだろ」と思うような行為を行っているユーザー様がいましたらDMまでご連絡ください。</p>
+        <p>では、！この案内に同意(?)できる場合は下のチェックボックスにチェックを入れ、招待を受けて下さい！</p>
+        <script type="text/javascript">
+          function check(){
+          if(document.signup.agree.checked == true){
+          return true;
+          }else{
+          alert("利用規約に同意してください。");
+          return false;
+          }
+          }
+          </script>
+
+        <div class="inputbox">
+          <form action="https://discord.gg/eq9yD2cRQc" method="POST" name="signup" onsubmit="return check();">
+            <input type="checkbox" id="consent-chk" name="consent-chk" value="1">
+              <label for="consent-chk" class="label_test"><span>同意します！！</span><img src="だいちまる鯖(本).png"><p>あ、あと私はロボットではありません</p></label>
+          <input type="submit" value="Join to Server!!!" class="regist-on" disabled>
+          </form>
+        </div>
+          <div class="sukima"></div>
+    </main>
+
+<script>
+// 同意するのチェックボックス
+const consent_chk = document.querySelector(`#consent-chk`);
+// 送信ボタン
+const submit_btn = document.querySelector(`input[type=submit]`);
+
+// チェックボックスの入力イベント
+consent_chk.addEventListener('change', () => {
+	
+	// チェックボックスがあれば無効化をオフ、なければオン
+	if (consent_chk.checked === true) {
+		submit_btn.disabled = false;
+	} else {
+		submit_btn.disabled = true;
+	}
+
+});
+</script>
