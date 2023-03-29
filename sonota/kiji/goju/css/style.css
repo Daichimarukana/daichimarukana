@@ -653,7 +653,7 @@ abnai{
 
 @keyframes slideIn {
   0% {
-    transform: translateX(30px);
+    transform: translateX(0px);
     opacity: 0;
   }
   100% {
