@@ -1,173 +1,1205 @@
+::selection {
+  background: rgb(255, 101, 157);
+  color: rgb(255,255,255);
+}
+.OMG{
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  background-color: rgb(255,68,68);
+  border-radius: 16px;
+  font-family: 'M PLUS 1p', sans-serif;
+  color:#ffffff;
+  font-size: 2em;
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+}
+f1{
+  font-family: 'M PLUS 1p', sans-serif;
+  line-height: 6px;
+  font-size: 20px;
+}
+f1 a{
+  color: rgb(220,220,220);
+  text-decoration: none;
+}
+#header{
+  height: 40px;
+  width:auto;
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  background:rgb(255,255,255);
+  color:rgb(245, 31, 117);
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+  border-radius: 10px 10px 10px 10px;
+}
+
+h1{
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 240%;
+}
+
+h2{
+  margin-top: 10px;
+  font-size: 200%;
+}
+
+.sitasen a{
+  color: rgb(64,64,64);
+  text-decoration: none;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li a{
+  display: block;
+  text-decoration: none;
+  color: rgb(255,68,68);
+  font-size: 180%;
+  padding:10px;
+}
+
 
 body{
-  background-color:#fbfbfd;
-  background-attachment: fixed;
+font-family: 'Mochiy Pop One', sans-serif;
   background-size: cover;
-  background-position: center;
+background-attachment: fixed;
+  background-image:url("back.png");
+  scroll-behavior: smooth;
+}
 
-  margin-right:auto;
-  margin-left:auto;
-  }
-  .Header {
-    z-index: 1;
-  position: fixed;
+.mmain{
+  font-family: 'Mochiy Pop One', sans-serif;
+  color:rgb(245, 31, 117);
+  text-align:center;
+  padding: -10px 0;
+  font-size: 9mm;
+}
+.mmains{
+  font-family: 'Mochiy Pop One', sans-serif;
+  color:rgb(245, 31, 117);
+  text-align:center;
+  padding:0px 0;
+  font-size: 5mm;
+}
+
+.bobby{
+  font-family: 'M PLUS 1p', sans-serif;
+  font-style:inherit;
+  color:rgb(255,255,255);
+  text-align:center;
+  height:center;
+  line-height:600%;
+  text-shadow: 0 0 5px rgba(0, 0, 0, .1);
+  padding:100px 0;
+  font-size: 700%;
+}
+
+.area {
+  width: auto;
+  height: auto;
+  padding: 50px;
+  background-color: rgb(255,255,255);
+  overflow: hidden;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+  border-radius: 10px 10px 10px 10px;
+}
+.sukima{
+  margin-top:100px;
+}
+
+body {
+  background-color: #e1e1e1;
+}
+.sosyal {
+  margin: 50px auto;
+}
+
+.twitter {
+  background-color: rgb(29, 155, 240);
+  box-shadow: 0 4px 0 rgb(9, 135, 210);
+  
+  display: inline;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  margin: 5px;
+  width: 20%;
+  padding: 1% 4%;
+}
+.twitter:active {
+  top: 2px;
+	box-shadow: 0 2px 0 rgb(9, 135, 210);
+}
+.twitter:hover {
+  background-color: rgb(29, 155, 240);
+}
+.youtube {
+  background-color: rgb(255,0,0);
+  box-shadow: 0 4px 0 rgb(232,0,0);
+  
+  display: inline;
+  position: relative;
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  margin: 5px;
+  width: 20%;
+  padding: 1% 4%;
+}
+.youtube:active {
+  top: 2px;
+	box-shadow: 0 2px 0 rgb(255,0,0);
+}
+.youtube:hover {
+  background-color: rgb(232,0,0);
+}
+.ammot {
+  background-color: rgb(12,12,12);
+  box-shadow: 0 4px 0 rgb(0,0,0);
+  
+  display: inline;
+  position: relative;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  margin: 5px;
+  width: 20%;
+  padding: 1% 4%;
+}
+.ammot:active {
+  top: 2px;
+	box-shadow: 0 2px 0 rgb(0,0,0);
+}
+.ammot:hover {
+  background-color: rgb(12,12,12);
+}
+.mash {
+  background-color: rgb(243,150,154);
+  box-shadow: 0 4px 0 rgb(213,120,124);
+  
+  display: inline;
+  position: relative;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  margin: 5px;
+  width: 20%;
+  padding: 1% 4%;
+}
+.mash:active {
+  top: 2px;
+	box-shadow: 0 2px 0 rgb(213,120,124);
+}
+.mash:hover {
+  background-color: rgb(243,150,154);
+}
+.disco {
+  background-color: rgb(88,101,242);
+  box-shadow: 0 4px 0 rgb(58,71,212);
+
+  display: inline;
+  position: relative;
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  margin: 5px;
+  width: 20%;
+  padding: 1% 4%;
+}
+.disco:active {
+  top: 2px;
+	box-shadow: 0 2px 0 rgb(58,71,212);
+}
+.disco:hover {
+  background-color: rgb(88,101,242);
+}
+.github {
+  background-color: rgb(3,1,1);
+  box-shadow: 0 4px 0 rgb(23,21,21);
+  
+  display: inline;
+  position: relative;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  margin: 5px;
+  width: 20%;
+  padding: 1% 4%;
+}
+.github:active {
+  top: 2px;
+	box-shadow: 0 2px 0 rgb(23,21,21);
+}
+.github:hover {
+  background-color: rgb(3,1,1);
+}
+.niconico {
+  background-color: #FAFAFA;
+  box-shadow: 0 4px 0 #e6e6e6;
+  
+  display: inline;
+  position: relative;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 21px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  color: #252525;
+  border-radius: 5px;
+  margin: 5px;
+  width: 20%;
+  padding: 1% 4%;
+}
+.niconico:active {
+  top: 2px;
+	box-shadow: 0 2px 0 #e6e6e6;
+}
+.niconico:hover {
+  background-color: #FAFAFA;
+}
+.pixiv {
+  background-color: rgb(0, 150, 250);
+  box-shadow: 0 4px 0 rgb(0, 104, 173);
+  
+  display: inline;
+  position: relative;
+  font-family: 'Cabin', sans-serif;
+  font-size: 21px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px;
+  width: 20%;
+  padding: 1% 4%;
+}
+.pixiv:active {
+  top: 2px;
+	box-shadow: 0 2px 0 rgb(0, 104, 173);
+}
+.pixiv:hover {
+  background-color: rgb(0, 150, 250);
+}
+
+.qiita {
+  background-color: #55c500;
+  box-shadow: 0 4px 0 #337800;
+  
+  display: inline;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px;
+  width: 20%;
+  padding: 1% 4%;
+}
+.qiita:active {
+  top: 2px;
+	box-shadow: 0 2px 0 #337800;
+}
+.qiita:hover {
+  background-color: #55c500;
+}
+.misskey {
+  background-color: #96d04a;
+  box-shadow: 0 4px 0 #4ab300;
+  
+  display: inline;
+  position: relative;
+  font-family: 'BIZ UDGothic', sans-serif;
+  font-size: 21px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  color: #f9f9f9;
+  border-radius: 5px;
+  margin: 5px;
+  width: 20%;
+  padding: 1% 4%;
+}
+.misskey:active {
+  top: 2px;
+	box-shadow: 0 2px 0 #4ab300;
+}
+.misskey:hover {
+  background-color: #96d04a;
+}
+.service {
+  margin-top:20px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  margin-right: auto;
+  background-color: rgb(0, 153, 255);
+  box-shadow: 0 4px 0 rgb(24, 112, 172);
+  
+  display: inline;
+  position: relative;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 21px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  width: 20%;
+  padding: 1% 4%;
+}
+.service:active {
+  top: 2px;
+	box-shadow: 0 2px 0 rgb(24, 112, 172);
+}
+.service:hover {
+  background-color: rgb(0, 153, 255);
+}
+/*my ふれんど*/
+.modurili {
+  background-color: #2dce1e;
+  box-shadow: 0 4px 0 #1c8113;
+    top: 5mm;
+  display: inline;
+  position: relative;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 21px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  border-radius: 5px;
+  margin: 5px;
+  width: 20%;
+  padding: 1% 4%;
+}
+.modurili:active {
+ top:6mm;
+	box-shadow: 0 2px 0 #1c8113;
+}
+.modurili:hover {
+top:6mm;
+  background-color: #2dce1e;
+}
+
+.kouchagayu {
+  background-color: #ff5353;
+  box-shadow: 0 4px 0 #9b0b17;
+    top: 5mm;
+  display: inline;
+  position: relative;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 21px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  border-radius: 5px;
+  margin: 5px;
+  width: 20%;
+  padding: 1% 4%;
+}
+.kouchagayu:active {
+ top:6mm;
+	box-shadow: 0 2px 0 #9b0b17;
+}
+.kouchagayu:hover {
+top:6mm;
+  background-color: #ff5353;
+}
+/*end*/
+
+#cards {
+  position: relative;
+  display: flex;
+  -ms-flex-pack: justify;
+  margin: 0% auto;
+  max-width: 960px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+a.cards-link {
+  text-decoration: none;
+}
+
+#cards img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.cards-figure {
+  margin: 0;
+  padding: 0;
+}
+
+.cards-title {
+  color: rgb(245,31,117);
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.cards-text-tax {
+  margin: auto;
+  padding-bottom: 20px;
+  font-size: 5mm;
+  color: rgb(100,100,100);
+}
+
+.cards-list {
+  margin: 0.5em auto;
+  padding: 0;
+  width: 96%;
+  background: rgb(255,255,255);
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.cards-list {
+  width: calc(96% / 2);
+}
+
+/* 動画全体の横幅を指定するためのdiv */
+.video-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%; /* ここに動画の横幅を指定 */
+}
+
+/* 動画を囲うdiv */
+.video {
+  position: relative;
+  width:100%;
+  height:0; 
+  padding-top: 56.25%;
+}
+
+.video iframe{
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 56px;
-  padding-top: 0.0%;
-  padding-bottom: 0.42%;
-  padding-left: 1%;
-  
-  background-color: #252525;
-  box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
-  font-family: 'Zen Maru Gothic', sans-serif;
-  font-size: 2.6em;
+  height: 100%;
+border-radius: 16px;
+}
+.daichiserv{
+  background-color: rgb(35,39,42);
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 1cm;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  width: 10em;
+  height: 9em;
+  overflow: hidden;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+  border-radius: 10px 10px 10px 10px;
+}
+
+img{
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+}
+
+.serv-image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.serv-serv {
+  width: 30%;
+height: 30%;
+  border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+}
+.d-serv {
+  width: 10%;
+height: 10%;
+  border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+}
+
+.join {
+  background-color: rgb(88,101,242);
+  box-shadow: 0 4px 0 rgb(58,71,212);
+  display: inline;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 0.8% 4%;
+}
+.join:active {
+	box-shadow: 0 2px 0 rgb(58,71,212);
+}
+.join:hover {
+  background-color: rgb(88,101,242);
+}
+.circle{
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+color:rgb(100,255,100)
+}
+
+.fter{
+  margin-top: -10px;
+  margin-bottom: -10px;
+  width: auto;
+  height: auto;
+
+  background-color: rgb(255,255,255);
+  color:rgb(245, 31, 117);
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 22px;
   text-align: left;
-  color: #fff;
-  
-  }
-  img{
-    width: 470px;
-    margin-left: 0px;
-    margin-right: auto;
-    margin-top: -200px;
-    border-radius: 25px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-  }
-  
-  .minimoji{
-    z-index: -2;
-      margin-top: 11em;
-      text-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-      font-family: 'Be Vietnam Pro', sans-serif;
-      font-size: 2em;
-      color: rgb(255,68,68);
-      text-align: center;
-  }
-  .dekamoji{
-    z-index: -1;
-      margin-bottom: 7em;
-      text-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-      font-family: 'Zen Maru Gothic', sans-serif;
-      font-size: 4em;
-      color: #252525;
-      text-align: center;
+  padding-left: 10px;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.notsita{
+  color:rgb(245, 31, 117);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+
+  .area {
+    width: auto;
+    height: auto;
+    padding: 50px;
+    background-color: rgb(255,255,255);
+    overflow: hidden;
+    box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+    border-radius: 16px;
   }
 
-  .dekamoji img{
-    z-index: -3;
+  .OMG{
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
-  }
-
-  .oops{
-    background-color: var(--color-yellow-10);
-    margin-left:5%;
-    margin-right:5%;
-    padding-top: 40px;
-    padding-bottom: 60px;
-  }
-
-  .oops h1{
-    font-size: 3em;
-    margin-left: 15%;
-    color:var(--color-text-high-emphasis);
-    font-family: 'Be Vietnam Pro', sans-serif;
-  }
-
-  .oops h2{
+    width: auto;
+    background-color: rgb(255,68,68);
+    border-radius: 16px;
+    font-family: 'M PLUS 1p', sans-serif;
+    color:#ffffff;
     font-size: 2em;
-    margin-left: 15%;
-    color:var(--color-text-high-emphasis);
-    font-family: 'Be Vietnam Pro', sans-serif;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+  }
+  f1{
+    font-family: 'M PLUS 1p', sans-serif;
+    line-height: 6px;
+    font-size: 20px;
+  }
+  f1 a{
+    color: rgb(220,220,220);
+    text-decoration: none;
   }
 
-  .oops p{
-    font-size: 1.6em;
-    margin-left: 15%;
-    color:var(--color-text-high-emphasis);
-    font-family: 'Zen Maru Gothic', sans-serif;
-  }
-   
-  main{
-    background-color: #252525;
-    padding-top: 40px;
-    padding-bottom: 60px;
-  }
-
-  main h1{
-    font-size: 3em;
-    margin-left: 15%;
-    color:#fff;
-    font-family: 'Be Vietnam Pro', sans-serif;
+  #header{
+    height: 60px;
+    width:auto;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    background:rgb(255,255,255);
+    color:rgb(245, 31, 117);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+    border-radius: 10px 10px 10px 10px;
   }
 
-  main h2{
-    font-size: 2em;
-    margin-left: 15%;
-    color:#fff;
-    font-family: 'Be Vietnam Pro', sans-serif;
+.mmain{
+  font-family: 'Mochiy Pop One', sans-serif;
+  color:rgb(245, 31, 117);
+  text-align:center;
+  padding: 0px 0;
+  font-size: 20mm;
+}
+.mmains{
+  font-family: 'Mochiy Pop One', sans-serif;
+  color:rgb(245, 31, 117);
+  text-align:center;
+  padding:0px 0;
+  font-size: 12mm;
+}
+
+  .bobby{
+    font-family: 'M PLUS 1p', sans-serif;
+    font-style:inherit;
+    color:rgb(255,255,255);
+    text-align:center;
+    height:center;
+    line-height:600%;
+    text-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    padding:100px 0;
+    font-size: 300%;
+  }
+  .sosyal{
+    display:   inline-block;
+    align-items: center;
+
   }
 
-  main p{
-    font-size: 1.6em;
-    margin-left: 15%;
-    color:#fff;
-    font-family: 'Zen Maru Gothic', sans-serif;
+.video-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%; /* ここに動画の横幅を指定 */
+}
+  .twitter {
+    display:inline-block;
+    align-items: center;
+    margin: 10px;
+    width: 60%;
+    padding: 5% 15%;
+    background-color: rgb(29, 155, 240);
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 2cm;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+  }
+  .twitter:active {
+    top: 2px;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
+  }
+  .twitter:hover {
+    background-color: rgb(29, 155, 240);
+  }
+  .youtube {
+    display:inline-block;
+    align-items: center;
+    margin: 10px;
+    width: 60%;
+    padding: 5% 15%;
+    background-color: rgb(255,0,0);
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
+    
+    font-family: 'Anton', sans-serif;
+    font-size: 2cm;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+  }
+  .youtube:active {
+    top: 2px;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
+  }
+  .youtube:hover {
+    background-color: rgb(232,0,0);
+  }
+  .ammot {
+    display:inline-block;
+    align-items: center;
+    margin: 10px;
+    width: 60%;
+    padding: 5% 15%;
+    background-color: rgb(19,10,34);
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
+    
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 2cm;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+  }
+  .ammot:active {
+    top: 2px;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
+  }
+  .ammot:hover {
+    background-color: rgb(19,10,34);
+  }
+  .mash {
+    display:inline-block;
+    align-items: center;
+    margin: 10px;
+    width: 60%;
+    padding: 5% 15%;
+    background-color: rgb(243,150,154);
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
+    
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 2cm;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+  }
+  .mash:active {
+    top: 2px;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
+  }
+  .mash:hover {
+    background-color: rgb(243,150,154);
+  }
+  .disco {
+    display:inline-block;
+    align-items: center;
+    margin: 10px;
+    width: 60%;
+    padding: 5% 15%;
+    background-color: rgb(88,101,242);
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
+    
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 2cm;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+  }
+  .disco:active {
+    top: 2px;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
+  }
+  .disco:hover {
+    background-color: rgb(88,101,242);
+  }
+  .github {
+    display:inline-block;
+    align-items: center;
+    margin: 10px;
+    width: 60%;
+    padding: 5% 15%;
+    background-color: rgb(3,1,1);
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
+    
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 2cm;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+  }
+  .github:active {
+    top: 2px;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
+  }
+  .github:hover {
+    background-color: rgb(3,1,1);
+  }
+  .niconico {
+    display:inline-block;
+    align-items: center;
+    margin: 10px;
+    width: 60%;
+    padding: 5% 15%;
+    background-color: #FAFAFA;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
+
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+   font-size: 2cm;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    color: #252525;
+    border-radius: 15px;
+  }
+  .niconico:active {
+    top: 2px;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
+  }
+  .niconico:hover {
+    background-color: #FAFAFA;
+  }
+.pixiv {
+    display:inline-block;
+    align-items: center;
+    margin: 10px;
+    width: 60%;
+    padding: 5% 15%;
+    background-color: rgb(0, 150, 250);
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
+
+    font-family: 'Cabin', sans-serif;
+   font-size: 2cm;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+  }
+  .pixiv:active {
+    top: 2px;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
+  }
+  .pixiv:hover {
+    background-color: rgb(0, 150, 250);
+  }
+	
+.qiita {
+    display:inline-block;
+    align-items: center;
+    margin: 10px;
+    width: 60%;
+    padding: 5% 15%;
+    background-color: 55c500;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
+
+    font-family: 'Roboto', sans-serif;
+   font-size: 2cm;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+  }
+  .qiita:active {
+    top: 2px;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
+  }
+  .qiita:hover {
+    background-color: 55c500;
+  }
+	
+.misskey {
+    display:inline-block;
+    align-items: center;
+    margin: 10px;
+    width: 60%;
+    padding: 5% 15%;
+    background-color: #96d04a;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
+
+    font-family: 'BIZ UDGothic', sans-serif;
+   font-size: 2cm;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+  }
+  .misskey:active {
+    top: 2px;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
+  }
+  .misskey:hover {
+    background-color: #96d04a;
   }
 
-  .date{
-    font-size: 1.6em;
-    margin-top: -60px;
-    margin-right: 15%;
-    text-align: right;
-    color:#fff;
-    font-family: 'Zen Maru Gothic', sans-serif;
+  .service {
+    margin-left: auto;
+    margin-right: auto;
+    display:inline-block;
+    align-items: center;
+    width: 60%;
+    padding: 5% 15%;
+    background-color: rgb(87, 184, 248);
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
+
+    font-family: 'M PLUS 1p', sans-serif;
+   font-size: 2cm;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+  }
+  .service:active {
+    top: 2px;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
+  }
+  .service:hover {
+    background-color: rgb(87, 184, 248);
   }
 
-  .main2{
-    background-color: #fff;
-    padding-top: 40px;
-    padding-bottom: 60px;
+  /*ふれんど*/
+  .modurili {
+    display:inline-block;
+    align-items: center;
+    margin: 10px;
+    width: 60%;
+    padding: 5% 15%;
+    background-color: #2dce1e;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
+
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+   font-size: 2cm;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    border-radius: 15px;
+  }
+  .modurili:active {
+    top: 2px;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
+  }
+  .modurili:hover {
+    background-color: #2dce1e;
   }
 
-  .main2 h1{
-    font-size: 3em;
-    margin-left: 15%;
-    color:#252525;
-    font-family: 'Be Vietnam Pro', sans-serif;
+  .kouchagayu {
+    display:inline-block;
+    align-items: center;
+    margin: 10px;
+    width: 60%;
+    padding: 5% 15%;
+    background-color: #ff5353;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
+
+    font-family: "Mochiy Pop One", sans-serif;
+   font-size: 2cm;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    border-radius: 15px;
+  }
+  .kouchagayu:active {
+    top: 2px;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
+  }
+  .kouchagayu:hover {
+    background-color: #ff5353;
   }
 
-  .main2 h2{
-    margin-top: -20px;
-    margin-bottom: -20px;
-    font-size: 4em;
-    margin-left: 15%;
-    color:#252525;
-    font-family: 'Be Vietnam Pro', sans-serif;
-  }
+}
+@media (prefers-color-scheme: dark) {
 
-  .main2 p{
-    font-size: 1.6em;
-    margin-left: 15%;
-    color:#252525;
-    font-family: 'Zen Maru Gothic', sans-serif;
-  }
-
-  a{
-      color: rgb(29, 155, 240);
-      text-decoration: none;
-    }
+#header{
+  height: 40px;
+  width:auto;
+  display: flex;
   
-  .foo{
-    margin-left: 15%;
-    margin-top: 160px;
-    font-family: 'Zen Maru Gothic', sans-serif;
-      font-style: italic;
-      text-align: left;
-      color: rgb(245,31,117);
-      font-size: 1.2em;
-  }
+  justify-content: space-between;
+  align-items: center;
+  background:rgb(32,32,32);
+  color:rgb(255,255,255);
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+  border-radius: 10px 10px 10px 10px;
+}
 
+h1{
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 240%;
+}
+
+h2{
+  margin-top: 10px;
+  font-size: 200%;
+}
+
+.sitasen a{
+  color: rgb(230,230,230);
+  text-decoration: none;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li a{
+  display: block;
+  text-decoration: none;
+  color: rgb(255,68,68);
+  font-size: 180%;
+  padding:10px;
+}
+
+
+body{
+font-family: 'Mochiy Pop One', sans-serif;
+  background-size: cover;
+background-attachment: fixed;
+  background-image:url("back2.png");
+  scroll-behavior: smooth;
+}
+
+.mmain{
+  font-family: 'Mochiy Pop One', sans-serif;
+  color:rgb(255,255,255);
+  text-align:center;
+  padding: -10px 0;
+  font-size: 9mm;
+}
+.mmains{
+  font-family: 'Mochiy Pop One', sans-serif;
+  color:rgb(255,255,255);
+  text-align:center;
+  padding:0px 0;
+  font-size: 5mm;
+}
+
+.bobby{
+  font-family: 'M PLUS 1p', sans-serif;
+  font-style:inherit;
+  color:rgb(255,255,255);
+  text-align:center;
+  height:center;
+  line-height:600%;
+  text-shadow: 0 0 5px rgba(0, 0, 0, .1);
+  padding:100px 0;
+  font-size: 700%;
+}
+
+.area {
+  width: auto;
+  height: auto;
+  padding: 50px;
+  background-color: rgb(32,32,32);
+  overflow: hidden;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+  border-radius: 10px 10px 10px 10px;
+}
+.sukima{
+  margin-top:100px;
+}
+
+body {
+  background-color: #e1e1e1;
+}
+
+#cards {
+  position: relative;
+  display: flex;
+  -ms-flex-pack: justify;
+  margin: 0% auto;
+  max-width: 960px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+a.cards-link {
+  text-decoration: none;
+}
+
+#cards img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.cards-figure {
+  margin: 0;
+  padding: 0;
+}
+
+.cards-title {
+  font-style: normal;
+  font-family: 'M PLUS 1p', sans-serif;
+  color: rgb(245,31,117);
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.cards-text-tax {
+  margin: auto;
+  font-family: 'Mochiy Pop One', sans-serif;
+  padding-bottom: 20px;
+  font-size: 5mm;
+  color: rgb(230,230,230);
+}
+
+.cards-list {
+  margin: 0.5em auto;
+  padding: 0;
+  width: 96%;
+  background: rgb(64,64,64);
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.cards-list {
+  width: calc(96% / 2);
+}
+
+.notsita{
+  color:rgb(255,255,255);
+  text-decoration: none;
+}
+
+.fter{
+  margin-top: -10px;
+  margin-bottom: -10px;
+  width: auto;
+  height: auto;
+
+  background-color: rgb(32,32,32);
+  color:rgb(245, 31, 117);
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 22px;
+  text-align: left;
+  padding-left: 10px;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
+  border-radius: 10px 10px 10px 10px;
+}
+}
