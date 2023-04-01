@@ -61,6 +61,35 @@ body{
     margin-right: auto;
     width: 400px;
   }
+
+  .oops{
+    background-color: var(--color-yellow-10);
+    margin-left:5%;
+    margin-right:5%;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .oops h1{
+    font-size: 3em;
+    margin-left: 15%;
+    color:var(--color-text-high-emphasis);
+    font-family: 'Be Vietnam Pro', sans-serif;
+  }
+
+  .oops h2{
+    font-size: 2em;
+    margin-left: 15%;
+    color:var(--color-text-high-emphasis);
+    font-family: 'Be Vietnam Pro', sans-serif;
+  }
+
+  .oops p{
+    font-size: 1.6em;
+    margin-left: 15%;
+    color:var(--color-text-high-emphasis);
+    font-family: 'Zen Maru Gothic', sans-serif;
+  }
    
   main{
     background-color: #252525;
