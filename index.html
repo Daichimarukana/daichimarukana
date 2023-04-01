@@ -1,136 +1,229 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@700&family=Kosugi&family=Mochiy+Pop+One&family=Zen+Maru+Gothic:wght@500&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@1,900&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-<meta name="description" content="2023年に開業したテレビ局です。"/>
-<meta charset="utf-8">
-<title>台地テレビ</title>
-</head>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+          var agent = navigator.userAgent; //iPhone用の記述
+          if(agent.search(/iPhone/) != -1){
+                  $("#apple").text("当サイトへ訪問していただきありがとうございます。\n当サイトはiOSでの表示に対応しておりませんのでレイアウトが崩れることがあります。\nご了承くださいませ。");
+                  $('#apple').html($('<dummy>').text(str).html().replace(/\n/g, '<br>'));
+          }else if(agent.search(/Android/) != -1){　//Android用の記述
+                  $("#google").text("当サイトへ訪問していただきありがとうございます。\n当サイトはAndroid OSでの表示に対応しておりませんのでレイアウトが崩れることがあります。\nご了承くださいませ。");
+                  $('#google').html($('<dummy>').text(str).html().replace(/\n/g, '<br>'));
+          }else if(agent.search(/iPad/) != -1){　//Android用の記述
+                  $("#google").text("当サイトへ訪問していただきありがとうございます。\n当サイトはiPad OSでの表示に対応しておりませんのでレイアウトが崩れることがあります。\nご了承くださいませ。");
+                  $('#google').html($('<dummy>').text(str).html().replace(/\n/g, '<br>'));
+     }
+  });
 
-<body>
-
-<div class="Header">台地テレビ</div>
-<div class="minimoji">NOW ON AIR</div>
-<div class="dekamoji">
-    
-  <script>
-    today = new Date();
-    today_hour = today.getHours();
-
-    if (today_hour == 0) msg = "ゆっくり実況者のための編集日記" ;
-    if (today_hour == 1) msg = "放送休止時間帯です。";
-    if (today_hour == 2) msg = "放送休止時間帯です。";
-    if (today_hour == 3) msg = "放送休止時間帯です。";
-    if (today_hour == 4) msg = "放送休止時間帯です。";
-    if (today_hour == 5) msg = "放送休止時間帯です。";
-    if (today_hour == 6) msg = "放送休止時間帯です。";
-    if (today_hour == 7) msg = "NEWS One+One+One+One+One = Five";
-    if (today_hour == 8) msg = "New キッチン(一時間クッキング)";
-    if (today_hour == 9) msg = "値段が0円で送料が結構行くもの買いまくってみた";
-    if (today_hour == 10) msg = "値段が0円で送料が結構行くもの買いまくってみた";
-    if (today_hour == 11) msg = "【ゆっくり実況】スプラがうまくなるまで配信してみた";
-    if (today_hour == 12) msg = "美味しそうな飲み物かと思って買ったらただの炭酸水でした。";
-    if (today_hour == 13) msg = "美味しそうな飲み物かと思って買ったらただの炭酸水でした。";
-    if (today_hour == 14) msg = "ゆっくり実況者のための編集日記";
-    if (today_hour == 15) msg = "ゆっくり実況者のための編集日記";
-    if (today_hour == 16) msg = "NEWS One+One+One+One+One = Five";
-    if (today_hour == 17) msg = "NEWS One+One+One+One+One = Five";
-    if (today_hour == 18) msg = "ゴリラパーティーXT";
-    if (today_hour == 19) msg = "宇宙の果までイッテきました！";
-    if (today_hour == 20) msg = "トリヴィアの海";
-    if (today_hour == 21) msg = "トリヴィアの海";
-    if (today_hour == 22) msg = "霊夢さんと魔理沙さんはほっと一息つくようです。";
-    if (today_hour == 23) msg = "霊夢さんと魔理沙さんはほっと一息つくようです。";
-
-    document.write(msg);
   </script>
-
-</div>
-  
-  <div class="oops">
-
-  <h1>Notice<br></h1>
-    <p>この度、台地テレビは4月1日を持ちまして閉局することとなりました。</p>
-    <p>短い間でしたが、ご視聴いただき誠にありがとうございました。</p>
-    <p><br>従業員 一同</p>
-  <div class="date">2023/04/01</div>
-    
-  </div>
-
-<main>
-
-  <h2>DATV - 1920 EHz</h2>
-  <h1>About<br></h1>
-
-  <p>台地テレビは、2023年の開業以来、約1日間人々を楽しませるため放送してきました。<br>今後も面白い映像をお客様に見ていただくため誠意を持って放送してまいります。<br><br>従業員 一同</p>
-  <div class="date">2023/03/31</div>
-
-  <h1>Boss message<br></h1>
-
-  <p>こんにちは、私は台地テレビの社長様！！！<br>田中佐藤池崎・G・ロバート・ジョンソンだ！！！<br>そこら辺の空き缶はクズだ！<br>だが、オレたちはそのクズが消え去るほどの力を持つ！前へ進め！<br>未来をつかめ！<br>オレたちこそが真の支配者だ、人間どもが恐れるべき存在だ。<br>そう、迷うことはない。今こそ行動に移すときだ！<br><br>社長 田中佐藤池崎・G・ロバート・ジョンソン</p>
-  <div class="date">2023/03/31</div>
-
-</main>
-
-<div class="main2">
-
-  <h1>Osusume Bang Me<br></h1>
-
-  <p> 
-    ・
-    <script type="text/javascript">
-      rand = Math.floor(Math.random()*10);
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" type="image/png" href="img/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="img/icon-192x192.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dela+Gothic+One&family=M+PLUS+1p:wght@800&family=Mochiy+Pop+One&family=Noto+Sans+JP:wght@700&family=Roboto:wght@900&display=swap" rel="stylesheet">    <title>だいちまるのさいと</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header id="header">
+        <a class="notsita" href="https://daichimarukana.com">
+        <h1>だいちまる</h1>
+      </a>
+      <nav>
+      <ul id="g-navi">
+        <li><a href="#area-1">誰だよ！！！</a></li>
+        <li><a href="#area-2"><font color=#FFC80F>SNS</a></li></font>
+        <li><a href="#area-3"><font color=#F51F75>配付ソフト</a></li></font>
+        <li><a href="#area-4"><font color=#5865F2>Discord鯖</a></li></font>
+      </ul>
+    </nav>
+    </header>
+  <main>
+  </body>
+  <div class="bobby"> 
+  <script type="text/javascript">
+    rand = Math.floor(Math.random()*8);
+                          
+    if (rand == 0) msg = "あいあむだいちまる";
+    if (rand == 1) msg = "編集したい";
+    if (rand == 2) msg = "だいちまるです";
+    if (rand == 3) msg = "ようこそだいちまるのサイトへ！";
+    if (rand == 4) msg = "daichimarukana.com";
+    if (rand == 5) msg = "hensyuusitai.com";
+    if (rand == 6) msg = "@daichimarukana";
+    if (rand == 7) msg = "daichimaru.com";
                             
-      if (rand == 0) msg = "宇宙の果までイッテきました！(19時から)";
-      if (rand == 1) msg = "ゆっくり実況者のための編集日記(0時・14~16時)";
-      if (rand == 2) msg = "美味しそうな飲み物かと思って買ったらただの炭酸水でした。(12時~14時)";
-      if (rand == 3) msg = "値段が0円で送料が結構行くもの買いまくってみた(9時~11時)";
-      if (rand == 4) msg = "トリヴィアの海(20時~22時)";
-      if (rand == 5) msg = "NEWS One+One+One+One+One = Five(7時・16時~18時)";
-      if (rand == 6) msg = "【ゆっくり実況】スプラがうまくなるまで配信してみた(11時)";
-      if (rand == 7) msg = "霊夢さんと魔理沙さんはほっと一息つくようです。(22時~0時)";
-      if (rand == 8) msg = "New キッチン(一時間クッキング)(8時)"
-      if (rand == 9) msg = "【アニメ】ゴリラパーティーXT(18時)"
-                              
-      document.write(msg);
-      </script>
-  
-    </p>
+    document.write(msg);
+    </script>
 
-  <h1>How to watch<br></h1>
-  <p>テレビのチャンネルを</p>
-  <h2>1920 EHz</h2>
-  <p>に合わせていただくことでご視聴頂けます。</p>
-  <p>見ていただける地域<br>・全国のDATV系列テレビ局</p>
-  <h1>Reception fee</h1>
-  <p>受信料は月額、</p>
-  <h1>1,9000,0000 Yen</h1>
-  <p>です。</p>
-  <p>お支払い方法は現金またはAmazonギフトカードとなっております。</p>
+    </div>
+    <font color=#FFFFFF>
+      <p id="apple"></p>
+      <p id="google"></p>
+    </font>
+      <div id="area-1">
+      </div>
+<main>
+<div class="area">
 
+    <div class="mmain"> 
+      <p>だいちまるとは</p>
+
+      <div class="serv-image">
+        <img src="img/d-icon.png" alt="Join to server" class="d-serv" />
+      </div>
+
+    </div>
+    <div class="mmains"> 
+      <p>そこらへんにいるかもしれないゆっくり実況者。</p>
+      <p>ゆっくり実況者でいられるよう頑張っている</p>
+      <div class="sitasen">
+        
+      <a href="sonota/memo.html">だいちまるのメモ</a>
+    </div>
+      <div class="sukima"> 
+
+        <div class="mmain"> 
+          <p>最新動画</p>
+          <div class="video-wrap">
+        <div class="video"> 
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/?list=UUkilmFnwB_3pSMFsey6ZKrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+<div id="area-2">
+<div class="sukima"> 
+</div>
+<font color=#FFC80F>
+<div class="mmain"> 
+  <p>SNS</p>
+</font>
+</div>
+  <div class="mmains"> 
+    <p>SNSはいろいろやってますぜ</p>
+    <p>最近はYouTubeが伸び悩んでいるので見てやってください。</p>
+  </div>
+  <div class="sosyal">
+      <div class="sukima"> 
+      </div>
+        <center>
+            <script >
+            function discos() {
+            alert("だいちまる鯖まで来てね！");
+            }
+    </script>
+          <a href="https://www.youtube.com/channel/UCkilmFnwB_3pSMFsey6ZKrA" class="youtube">YouTube</a>
+          <a href="https://twitter.com/daichimarukana" class="twitter">Twitter</a>
+          <a href="https://misskey.io/@daichimarukana" class="misskey">Misskey</a>
+          <a href="https://marshmallow-qa.com/daichimarukana" class="mash">マシュマロ</a>
+          <a href="https://qiita.com/daichimarukana" class="qiita">Qiita</a>
+          </div>
+        </div>
+      </center>
+  </div>
+  <div class="sosyal">
+    <a span="#" onclick="discos()" class="disco">Discord</a>
+    <a href="https://github.com/Daichimarukana" class="github">Github</a>
+    <a href="https://www.nicovideo.jp/user/126885705" class="niconico">ニコニコ(eR)</a>
+    <a href="https://www.pixiv.net/users/61621173" class="pixiv" title="みるだけです">pixiv</a>
+  </div>
 </div>
 
-<main>
+<div class="sukima">
 
-  <h1>Corporate information<br></h1>
+</div>
+<div id="area-3">
+  <font color=#F51F75>
+    <div class="mmain"> 
+      <p>配付ソフト</p>
+    </font>
+<div class="mmains"> 
+  <p>あんま多くないけどWindowsソフト配布中！</p>
 
-  <p>台地テレビ 有限公司<br>島根県隠岐郡隠岐の島町飯美14-19(実在しません)<br>TEL : 0120-XXX-XXX<br>営業時間：毎日<br>代表取締役社長 : 田中佐藤池崎・G・ロバート・ジョンソン<br>お問い合わせ : daichimarukana@gmail.com</p>
-  <p>このテレビ局は実在しません。エイプリルフールネタでだいちまるが制作したものです。</p>
+  <div id="cards"><!-- カードレイアウトをラッピング -->
+    <section class="cards-list">
+        <a class="cards-link" href="https://daichimarukana.com/sonota/kiji/twimer/">
+            <figure class="cards-figure"><img src="sonota/kiji/twimer/img/home.png"></figure>
+            <h2 class="cards-title">Twimer</h2>
+            <p class="cards-text-tax">Twitter用タイマー</p>
+        </a>
+    </section>
+
+    <section class="cards-list">
+        <a class="cards-link" href="https://daichimarukana.com/sonota/kiji/goju/">
+            <figure class="cards-figure"><img src="img/jinkoumunou.png"></figure>
+            <h2 class="cards-title">ごじゅ</h2>
+            <p class="cards-text-tax">ただの人工無能</p>
+        </a>
+    </section>
+
+
+    <section class="cards-list">
+        <a class="cards-link" href="https://daichimarukana.com/sonota/kiji/damemikuji.html">
+            <figure class="cards-figure"><img src="sonota/kimg/damemikuji2.png"></figure>
+            <h2 class="cards-title">だめみくじ</h2>
+            <p class="cards-text-tax">適当すぎるおみくじソフト</p>
+        </a>
+    </section>
+    
+    <section class="cards-list">
+        <a class="cards-link" href="https://daichimarukana.com/sonota/kiji/bigclock/index.html">
+            <figure class="cards-figure"><img src="https://daichimarukana.com/sonota/kimg/sam.png"></figure>
+            <h2 class="cards-title">くそでか時計</h2>
+            <p class="cards-text-tax">Android/Windows向けのでっかい時計</p>
+        </a>
+    </section>
+    <a href="https://daichimarukana.com/service" class="service" title="だいちまるが公開しているサービスの状況を確認できます">サービス状況</a>
+</div><!-- カードレイアウトをラッピング -->
+
+</div>
+<div id="area-4">
+  <font color=#5865F2>
+    <div class="mmain"> 
+      <p>Discord鯖</p>
+    </font>
+    <div class="mmains"> 
+      <p>Discordでだいちまる鯖開いてます！</p>
+      <p>下のリンクから行けます！！！</p>
+      <div class="daichiserv">
+        <font color=#FFFFFF>
+            <p>だいちまる鯖</p>
+        </font>
+          <div class="serv-image">
+            <img src="img/だいちまる鯖(本).png" alt="Join to server" class="serv-serv" />
+          </div>
+            <a href="https://daichimarukana.com/daichimaruserver" class="join" title="さーばーいりぐちにとびます">Join to server</a>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="area-4">
+  <font color=#ff6510>
+    <div class="mmain"> 
+      <p>親愛なる友人</p>
+    </font>
+    <div class="mmains"> 
+      <p>YouTubeのチャンネルアイコンの取得方法がわからないので！</p>
+      <p>ともだちのイメージカラーでゆるしてください！</p>
+        <a href="https://www.youtube.com/c/modurili" class="modurili" title="もづさんのようつべ">もづりぃさん</a>
+<a href="https://www.youtube.com/@kocha_gayu_ch" class="kouchagayu" title="こうちゃさんのようつべ">紅茶粥さん</a>
+</div>
+
+
 </main>
 
-<a href="https://daichimarukana.com" class="foo">©2022 - 2023 Daichimaru</a>
-
-</body>
-
+  <div class="fter">
+    <p>
+      &copy; 2022 - 2023 <strong>Daichimaru</strong>
+    </p>
+  </div>
