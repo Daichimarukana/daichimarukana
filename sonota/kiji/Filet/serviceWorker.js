@@ -1,10 +1,10 @@
 
 var CACHE_NAME  = "Filetv1";
 var urlsToCache = [
-    "font/Unbounded-Medium.ttf",
-    "font/MPLUS1-Bold.ttf",
-    "font/BIZUDGothic-Regular.ttf",
-    "font/ZenMaruGothic-Medium.ttf",
+    "font/Unbounded-Medium.woff",
+    "font/MPLUS1-Bold.woff",
+    "font/BIZUDGothic-Regular.woff",
+    "font/ZenMaruGothic-Medium.woff",
     "img/192x192.png",
     "index.html"
 ];
