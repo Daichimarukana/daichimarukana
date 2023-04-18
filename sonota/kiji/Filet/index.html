@@ -1,0 +1,136 @@
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" type="image/png" href="img/192x192.png">
+    <link rel="icon" type="image/png" href="img/192x192.png">
+    <title>Filet</title>
+
+    <link rel="manifest" href="manifest.json">
+    <script>
+    if ('serviceWorker' in navigator) {
+     navigator.serviceWorker.register('serviceWorker.js')
+      .then(
+      function (registration) {
+          if (typeof registration.update == 'function') {
+              registration.update();
+          }
+      })
+      .catch(function (error) {
+        console.log("Error Log: " + error);
+      });
+    }
+    </script>
+
+    <script>
+      const selectFile = () => {
+
+        // FileListオブジェクト取得
+        const selectFiles = document.querySelector("#select-file").files
+
+        // Fileオブジェクト取得
+        const file = selectFiles[0]
+
+        // FileReaderオブジェクト取得
+        const reader = new FileReader()
+        reader.readAsText(file)
+
+        // ファイル読み込み完了時の処理
+        reader.onload = () => {
+          document.querySelector("#output").innerHTML = reader.result
+        }
+
+        // ファイル読み込みエラー時の処理
+        reader.onerror = () => {
+          console.log("ファイル読み込みエラー")
+        }
+      }
+    </script>
+    <style>
+    @font-face {
+	    font-family: 'Unbounded';
+	    src: url(font/Unbounded-Medium.ttf);
+        font-family: 'M PLUS 1';
+	    src: url(font/MPLUS1-Bold.ttf);
+        font-family: 'BIZ UDGothic';
+	    src: url(font/BIZUDGothic-Regular.ttf);
+        font-family: 'Zen Maru Gothic';
+	    src: url(font/ZenMaruGothic-Medium.ttf);
+    }
+
+    body{
+        background-color: #91e5f6;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1{
+        margin-top: 38px;
+        margin-bottom: 38px;
+        font-family: 'Unbounded', cursive;
+        text-align: center;
+        font-size: 5.8em;
+        color: #59a5d8;
+    }
+    label {
+        display:block;
+        width: auto;
+        height: 180px;
+        padding-top:50px;
+        padding-bottom:0px;
+        font-family: 'M PLUS 1', sans-serif;
+        color: #91e5f6;
+        border-radius: 50px;
+        font-size: 4.6em;
+        text-align: center;
+        background-color: #59a5d8;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+    .textbox-003 {
+        margin-top: 38px;
+        height: 68vh;
+        width: 100%;
+        padding: 30px 30px;
+        border: none;
+        border-radius: 50px;
+        background: #fafaff;
+        box-shadow: inset 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+        color: #252525;
+        font-family: 'BIZ UDGothic', sans-serif;
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    .textbox-003::placeholder {
+        color: #999;
+    }
+    .license{
+        font-size: 1.8em;
+        text-align: center;
+        font-family: 'Zen Maru Gothic', sans-serif;
+        color:#fafaff;
+    }
+    .foo{
+        font-size: 3em;
+        text-align: center;
+        font-family: 'Zen Maru Gothic', sans-serif;
+        color:#fafaff;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Filet</h1>
+    <h1 file-name></h1>
+    <label>
+        <input type="file" id="select-file" onchange="selectFile()"/>ファイル選択
+    </label>   	
+    <textarea class="textbox-003" id="output" readonly></textarea>
+    <div class="license">---使用フォント---<br>M PLUS 1,Zen Maru Gothic,Unbounded,BIZ UDGothic<br>すべてOFLライセンスです。</div>
+    <div class="foo"><i>© 2022 - 2023 Daichimaru</i></div>
+  </body>
+</html>
