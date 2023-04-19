@@ -1,12 +1,12 @@
 
 var CACHE_NAME  = "Filetv1";
 var urlsToCache = [
-    "font/Unbounded-Medium.woff",
-    "font/MPLUS1-Bold.woff",
-    "font/BIZUDGothic-Regular.woff",
-    "font/ZenMaruGothic-Medium.woff",
-    "img/192x192.png",
-    "index.html"
+    "https://daichimarukana.com/sonota/kiji/Filet/font/Unbounded-Medium.woff",
+    "https://daichimarukana.com/sonota/kiji/Filet/font/MPLUS1-Bold.woff",
+    "https://daichimarukana.com/sonota/kiji/Filet/font/BIZUDGothic-Regular.woff",
+    "https://daichimarukana.com/sonota/kiji/Filet/font/ZenMaruGothic-Medium.woff",
+    "https://daichimarukana.com/sonota/kiji/Filet/img/192x192.png",
+    "https://daichimarukana.com/sonota/kiji/Filet/index.html"
 ];
 
 self.addEventListener('install', function(event) {
