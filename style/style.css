@@ -366,6 +366,34 @@ body {
 .misskey:hover {
   background-color: #96d04a;
 }
+
+
+.taittu {
+  background-color: #ccc;
+  box-shadow: 0 4px 0 #e6e6e6;
+  
+  display: inline;
+  position: relative;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 21px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  color: #252525;
+  border-radius: 5px;
+  margin: 5px;
+  width: 20%;
+  padding: 1% 4%;
+}
+.taittu:active {
+  top: 2px;
+	box-shadow: 0 2px 0 #e6e6e6;
+}
+.taittu:hover {
+  background-color: #ccc;
+}
+
+
 .service {
   margin-top:20px;
   margin-left: auto;
@@ -947,6 +975,32 @@ color:rgb(100,255,100)
   .misskey:hover {
     background-color: #96d04a;
   }
+
+.taittu {
+    display:inline-block;
+    align-items: center;
+    margin: 10px;
+    width: 60%;
+    padding: 5% 15%;
+    background-color: #ccc;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.35);
+
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+   font-size: 2cm;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    color: #252525;
+    border-radius: 15px;
+  }
+  .taittu:active {
+    top: 2px;
+    box-shadow: 0px 0px 20px rgba(37,37,37,0.15);
+  }
+  .taittu:hover {
+    background-color: #ccc;
+  }
+
 
   .service {
     margin-left: auto;
