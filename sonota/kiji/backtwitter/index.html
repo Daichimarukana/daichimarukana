@@ -8,14 +8,39 @@
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@800&family=Potta+One&family=Yomogi&family=Zen+Maru+Gothic:wght@400&family=Kosugi+Maru&display=swap" rel="stylesheet">
 <meta charset="utf-8">
 <title>「X」Twitter化拡張機能配布ページ</title>
+
+
 </head>
 
+
+<script>
+
+window.onload = function(){
+        var agent = navigator.userAgent; //iPhone用の記述
+        if(agent.search(/iPhone/) != -1){
+          let text2 = document.querySelector('[class="chui"]').innerHTML;
+          document.querySelector('[class="chui"]').innerHTML = '<h1>ご注意！</h1><br><p>当サイトで公開している拡張機能はiPhone上では動作しません！<br>開発者の資金面でも技術面でも作れませんでした！<br>もし作り方等教えてくださる方いらっしゃいましたらご連絡していただけるとありがたいです！</p>';
+
+        }else if(agent.search(/Android/) != -1){　//Android用の記述
+          let text2 = document.querySelector('[class="chui"]').innerHTML;
+          document.querySelector('[class="chui"]').innerHTML = '<h1>ご注意！</h1><br><p>当サイトで公開している拡張機能は基本的にAndroid上では動作しません！<br>一応Kiwi Browserで導入しましたが動作しませんでした。<br>Android向けに作成する方法等教えてくださる方いらっしゃいましたらご連絡していただけるとありがたいです！</p>';
+        }else if(agent.search(/iPad/) != -1){　//Android用の記述
+          let text2 = document.querySelector('[class="chui"]').innerHTML;
+          document.querySelector('[class="chui"]').innerHTML = '<h1>ご注意！</h1><br><p>当サイトで公開している拡張機能はiPad上では動作しません！<br>開発者の資金面でも技術面でも作れませんでした！<br>もし作り方等教えてくださる方いらっしゃいましたらご連絡していただけるとありがたいです！</p>';
+    }
+};
+</script>
 
 <body>
 
 <div class="Header">Back Twitter</div>
 
+
+
 <div class="dekamoji">Goodbye "𝕏"</div>
+
+<div class="chui" id="mobile"></div>
+
 <div class="p2">「𝕏」ってなんかね...</div>
 <div class="p2"><br>みなさんこう思ったと思います、<br><i>「Xってなんかやだな。」</i><br>ブラウザ拡張機能 Back Twitterではその問題を解決します。</div>
 
