@@ -1385,4 +1385,17 @@ a.cards-link {
   box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .1);
   border-radius: 10px 10px 10px 10px;
 }
+
+.support p{
+  color: #F5F5F5;
+}
+.support i{
+  color: #F5F5F5;
+}
+.support_card{
+  color: #F5F5F5;
+}
+.support_card .cards-title{
+  color: #F5F5F5;
+}
 }
