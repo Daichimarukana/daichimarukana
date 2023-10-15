@@ -544,8 +544,9 @@ a.cards-link {
 
 #cards img {
   display: block;
-  max-width: 100%;
-  height: auto;
+  height: 260px;
+  width: 100%;
+  object-fit:cover;
   border-radius: 10px 10px 10px 10px;
 }
 
@@ -693,6 +694,32 @@ color:rgb(100,255,100)
 .notsita{
   color:rgb(245, 31, 117);
   text-decoration: none;
+}
+
+.support{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.support p{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 12pt;
+  color: #252525;
+}
+.support i{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16pt;
+  color: #252525;
+}
+.support_card{
+  width: 70%;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 12pt;
+  color: #252525;
+}
+.support_card .cards-title{
+  font-size: 24pt;
+  color: #252525;
 }
 
 @media screen and (max-width: 1024px) {
