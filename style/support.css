@@ -157,15 +157,16 @@ word-wrap: break-word;
   margin-top: auto;
   margin-bottom: auto;
   font-family: 'M PLUS 1p', sans-serif;
-  font-size:3em;
+  font-size:2.4vw;;
   padding: 3px;
   color: rgb(32,32,32);
   text-align: center;
-  width: 60%;
+  width: fit-content;
   word-wrap: break-word;
 }
 
 .inmain p{
+  width: 20%;
   margin: auto 2em auto auto;
   margin-top: auto;
   margin-bottom: auto;
@@ -195,7 +196,7 @@ word-wrap: break-word;
 }
 
 .inmain good{
-  margin: auto 20px auto auto;
+  margin: auto 20px;
   width: 5em;
   height:5em;
   border-radius: 50%;
@@ -208,7 +209,7 @@ word-wrap: break-word;
 }
 
 .inmain bad{
-  margin: auto 20px auto auto;
+  margin: auto 20px;
   width: 5em;
   height:5em;
   border-radius: 50%;
@@ -220,7 +221,7 @@ word-wrap: break-word;
 }
 
 .inmain chu{
-  margin: auto 20px auto auto;
+  margin: auto 20px;
   width: 5em;
   height:5em;
   border-radius: 50%;
