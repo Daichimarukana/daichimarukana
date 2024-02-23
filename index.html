@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>だいちまるのさいと</title>
+        <style type="text/css">
+            ::selection {
+                background: rgb(255, 100, 150);
+                color: rgb(255,255,255);
+            }
+            hr{
+                margin-top: 1em;
+                margin-bottom: 1em;
+                border: none;
+                border-bottom: 1.6px solid #9a9a9a;
+            }
+
+            ul{
+                position: fixed;
+            }
+            li{
+                margin-left: 12px;
+                list-style-type: none;
+            }
+
+            li::before {
+                position: relative;
+                top: -2px;
+                left: -18px;
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                content: '';
+                border-radius: 100%;
+                background: #F51F75;
+            }
+            li span {
+                color: #161616;
+            }
+
+            body {
+                margin: 0px;
+            }
+        
+            .body {
+                margin: 0px;
+                background-image: url("img/aboutmeback.png");
+                width: 99%;
+                height: 90dvh;
+            }
+
+            .main{
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+            }
+
+            .main p{
+                margin-left: auto;
+                margin-right: auto;
+                color:#161616;
+                font-size: 16px;
+                text-align: center;
+            }
+
+            .lp p{
+                color:#161616;
+                font-size: 1em;
+                text-align: left;
+            }
+
+            h1{
+                color:#161616;
+                font-size: 2em;
+                text-align: center;
+            }
+            .backh1{
+                color:rgb(255, 230, 240);
+            }
+
+            img{
+                width: 350px;
+                height: 415px;
+                object-fit: cover;
+            }
+
+            @media screen and (max-width:1120px) {
+                ul{
+                    position: relative;
+                }
+                .body {
+                    border-left: none;
+                    background-image: url("img/aboutmeback.png");
+                    width: 95%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                li{
+                    margin-left :16px;
+                    margin-right:16px;
+                    list-style-type: none;
+                }
+
+                li::before {
+                    position: relative;
+                    top: -2px;
+                    left: -9px;
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    content: '';
+                    border-radius: 100%;
+                    background: #F51F75;
+                }
+
+                .contaner {
+                    display: block;
+                    width: 100%;
+                    height: fit-content;
+                }
+                .main{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 100%;
+                }
+                img{
+                    width: 95%;
+                    height: 95%;
+                    object-fit: cover;
+                }
+
+                h1{
+                    color:#161616;
+                    font-size: 1.8em;
+                    text-align: center;
+                }
+
+                .main p{
+                    word-wrap: break-word;
+                    color:#161616;
+                    font-size: 1em;
+                    text-align: center;
+                }
+                .lp p{
+                    word-wrap: break-word;
+                    color:#161616;
+                    font-size: 1em;
+                    text-align: left;
+                    margin-right: 12px;
+                }
+            }
+        </style>
+    </head> 
+
+    <div class="contaner">
+        <div class="body">
+            <h1>だいちまるのさいと</h1>
+
+            <div class="main">
+                <p>リニューアル中...<br>
+                    更新作業が完了するまでご利用いただけません。<br>
+                    ご迷惑をおかけします。</p>
+            </div>
+
+        </div>
+    </div>
+</html>
