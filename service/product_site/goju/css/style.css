@@ -1,0 +1,740 @@
+
+body{
+background-color:#fbfbfd;
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+
+padding: 50px 10px 50px 10px;
+
+width: 984px;
+margin-right:auto;
+margin-left:auto;
+}
+.Header {
+  z-index: 1;
+position: fixed;
+animation: slideInY 1s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+
+top: 0;
+left: 0;
+width: 100%;
+height: 44px;
+padding-top: 0.0%;
+padding-bottom: 0.2%;
+padding-left: 23%;
+
+background-color: rgb(36, 130, 50);
+box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+font-family: 'Mochiy Pop One', sans-serif;
+font-size: 2em;
+text-align: left;
+color: #fff;
+
+}
+
+img{
+  width: 470px;
+  margin-left: 0px;
+  margin-right: auto;
+  margin-top: -200px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.dekamoji{
+  z-index: -1;
+    animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+    margin-top: 1.9em;
+    margin-bottom: 2em;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 10em;
+    color: transparent;
+	background: repeating-linear-gradient( 45deg, #248232 0, #2ba84a 100% );
+	-webkit-background-clip: text;
+    text-align: center;
+}
+ 
+@keyframes slideIn {
+  0% {
+    transform: translateX(180px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+  }
+  40%,100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInY {
+  0% {
+    transform: translateY(-64px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+  }
+  40%,100% {
+    opacity: 1;
+  }
+}
+
+main2{
+  display: flex;
+}
+
+.talk{
+  margin-top: 60px;
+  background-color: rgb(242, 245, 242);
+  border-radius: 40px;
+  box-shadow: 0px 0px 40px rgba(0,0,0,0.1);
+font-family: 'M PLUS 1p', sans-serif;
+padding: 3%;
+color: rgb(32,32,32);
+text-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.talk p2{
+  margin: 20px;
+	font-size: 64px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:left;
+	font-weight:bold;
+	color: transparent;
+	background: repeating-linear-gradient( 50deg, #248232 0, #2ba84a 100% );
+	-webkit-background-clip: text;
+}
+
+.talk p{
+  margin: 20px 0;
+	font-size: 1.8em;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:right;
+	font-weight:bold;
+	color: rgb(45, 58, 58);
+}
+
+.talkf img{
+  width: 380px;
+  margin-left: 0px;
+  margin-right: auto;
+  margin-top: -120px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.material-symbols-outlined.px48{
+  font-size:64px;
+}
+
+send{
+  color:#248232;
+}
+
+comment{
+  float: right;
+  color:#2ba84a;
+}
+
+
+.talk2{
+  margin-top: 40px;
+  width: 422px;
+  background: repeating-linear-gradient( 50deg, #248232 0, #2ba84a 100% );
+  border-radius: 40px;
+  box-shadow: 0px 0px 40px rgba(0,0,0,0.1);
+font-family: 'M PLUS 1p', sans-serif;
+padding: 3%;
+color: rgb(32,32,32);
+text-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.talk2 p2{
+  margin: 20px;
+	font-size: 64px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:left;
+	font-weight:bold;
+	color: rgb(242, 245, 242);
+}
+
+.talk2 p{
+  margin: 20px 0;
+	font-size: 1.8em;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:right;
+	font-weight:bold;
+	color: rgb(222, 225, 222);
+}
+
+.talk2 img{
+  width: 380px;
+  margin-left: 0px;
+  margin-right: auto;
+  margin-top: -200px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+send2{
+  color:rgb(242, 245, 242);
+}
+
+comment2{
+  float: right;
+  color:rgb(222, 225, 222);
+}
+
+
+.talk3{
+  margin-left: 30px;
+  margin-top: 40px;
+  width: 422px;
+  background-color: rgb(242, 245, 242);
+  border-radius: 40px;
+  box-shadow: 0px 0px 40px rgba(0,0,0,0.1);
+font-family: 'M PLUS 1p', sans-serif;
+padding: 3%;
+color: rgb(32,32,32);
+text-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.talk3 p2{
+  margin: 20px;
+	font-size: 64px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:left;
+	font-weight:bold;
+	color: transparent;
+	background: repeating-linear-gradient( 50deg, #248232 0, #2ba84a 100% );
+	-webkit-background-clip: text;
+}
+
+.talk3 p{
+  margin: 20px 0;
+	font-size: 1.8em;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:right;
+	font-weight:bold;
+	color: rgb(45, 58, 58);
+}
+
+.talk3 img{
+  width: 380px;
+  margin-left: 0px;
+  margin-right: auto;
+  margin-top: -200px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+
+
+.chui{
+  margin-top: -200px;
+  width: 420px;
+  background-color: rgb(248, 248, 212);
+  border-radius: 40px;
+  box-shadow: 0px 0px 40px rgba(0,0,0,0.04);
+font-family: 'M PLUS 1p', sans-serif;
+padding: 3%;
+color: rgb(32,32,32);
+text-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.chui p{
+  margin: 20px 0;
+	font-size: 1.8em;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:left;
+	font-weight:bold;
+	color: rgb(45, 58, 58);
+}
+
+abnai{
+  float: right;
+  color:rgb(255, 91, 91);
+}
+
+
+
+.downwar{
+  margin-top: 20px;
+  background-color: rgb(248, 248, 212);
+  border-radius: 40px;
+  box-shadow: 0px 0px 40px rgba(0,0,0,0.1);
+font-family: 'M PLUS 1p', sans-serif;
+padding: 3%;
+color: rgb(32,32,32);
+text-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.downwar p2{
+	font-size: 48px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:left;
+	font-weight:bold;
+	color: rgb(255, 91, 91);
+	-webkit-background-clip: text;
+}
+
+.downwar p{
+  margin: 20px 0;
+	font-size: 1.6em;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:left;
+	font-weight:bold;
+	color: rgb(45, 58, 58);
+}
+
+
+
+p{
+    font-size: 1.4em;
+}
+
+.p2{
+  margin: 20px 0;
+	font-size: 3em;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:center;
+	font-weight:bold;
+	color: transparent;
+	background: repeating-linear-gradient( 90deg, #248232 0, #2ba84a 100% );
+	-webkit-background-clip: text;
+}
+
+.p3{
+  margin: 20px 0;
+	font-size: 12em;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:left;
+	font-weight:bold;
+	color: transparent;
+	background: repeating-linear-gradient( 50deg, #248232 0, #2ba84a 100% );
+	-webkit-background-clip: text;
+}
+
+.p4{
+  margin: 20px 0;
+	font-size: 1.6em;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:right;
+	font-weight:bold;
+	color: rgb(45, 58, 58);
+}
+
+a{
+    color: rgb(29, 155, 240);
+    text-decoration: none;
+  }
+
+.foo{
+  margin-top: 160px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+    font-style: italic;
+    text-align: left;
+    color: rgb(245,31,117);
+    font-size: 1.2em;
+}
+
+.dlw{
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 422px;
+  background-color: rgb(242, 245, 242);
+  border-radius: 25px;
+  box-shadow: 0px 0px 40px rgba(0,0,0,0.1);
+font-family: 'M PLUS 1p', sans-serif;
+padding: 3%;
+color: rgb(32,32,32);
+text-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.dlw p{
+  margin: 10px 0;
+	font-size: 1.6em;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:center;
+	font-weight:bold;
+	color: rgb(45, 58, 58);
+}
+
+.dlbutton a{
+  font-family: 'BIZ UDGothic', sans-serif;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  width: 160px;
+  height: 26px;
+  background-color: #0071E3;
+  border-radius: 25px;
+  color:#fff;
+  box-shadow: 0px 0px 40px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width: 1080px) {
+  main2{
+    display: flex;
+    flex-direction: column;
+  }
+  body{
+  background-color:#fbfbfd;
+  background-size: cover;
+  position: absolute;
+  
+  width: 100%;
+  }
+  .Header {
+    z-index: 1;
+  animation: slideInY 1s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+  height: 64px;
+
+  padding-left: 0%;
+  padding-right: 0%;
+  
+  background-color: rgb(36, 130, 50);
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+  font-family: 'Mochiy Pop One', sans-serif;
+  font-size: 2.4em;
+  text-align: center;
+  color: #fff;
+  
+  }
+  
+  img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  }
+  
+  .dekamoji{
+    z-index: -1;
+      animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+      margin-top: 1.0em;
+      margin-bottom: 1.2em;
+      text-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+      font-family: 'Mochiy Pop One', sans-serif;
+      font-size: 64px;
+      color: transparent;
+    background: repeating-linear-gradient( 45deg, #248232 0, #2ba84a 100% );
+    -webkit-background-clip: text;
+      text-align: center;
+  }
+
+  
+.p2{
+  margin: 20px 0;
+	font-size: 1.4em;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:center;
+	font-weight:bold;
+	color: transparent;
+	background: repeating-linear-gradient( 90deg, #248232 0, #2ba84a 100% );
+	-webkit-background-clip: text;
+}
+
+.p3{
+  margin: 20px 0;
+	font-size: 6em;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:left;
+	font-weight:bold;
+	color: transparent;
+	background: repeating-linear-gradient( 50deg, #248232 0, #2ba84a 100% );
+	-webkit-background-clip: text;
+}
+
+.p4{
+  margin: 20px 0;
+	font-size: 1.2em;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:right;
+	font-weight:bold;
+	color: rgb(45, 58, 58);
+}
+
+
+
+
+
+
+
+
+.talk{
+  width: auto;
+  margin-top: 60px;
+  background-color: rgb(242, 245, 242);
+  border-radius: 40px;
+  box-shadow: 0px 0px 40px rgba(0,0,0,0.1);
+font-family: 'M PLUS 1p', sans-serif;
+padding: 3%;
+color: rgb(32,32,32);
+text-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.talk p2{
+  margin: 20px;
+  margin-left: 60px;
+	font-size: 64px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:left;
+	font-weight:bold;
+	color: transparent;
+	background: repeating-linear-gradient( 50deg, #248232 0, #2ba84a 100% );
+	-webkit-background-clip: text;
+}
+
+.talk p{
+  margin: 20px;
+	font-size: 1.6em;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:right;
+	font-weight:bold;
+	color: rgb(45, 58, 58);
+}
+
+.talkf img{
+  width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.material-symbols-outlined.px48{
+  font-size:48px;
+}
+
+send{
+  color:#248232;
+}
+
+comment{
+  float: right;
+  color:#2ba84a;
+}
+
+
+.talk2{
+  margin-top: 40px;
+  width: auto;
+  background: repeating-linear-gradient( 50deg, #248232 0, #2ba84a 100% );
+  border-radius: 40px;
+  box-shadow: 0px 0px 40px rgba(0,0,0,0.1);
+font-family: 'M PLUS 1p', sans-serif;
+padding: 3%;
+color: rgb(32,32,32);
+text-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.talk2 p2{
+  margin: 20px;
+	font-size: 64px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:left;
+	font-weight:bold;
+	color: rgb(242, 245, 242);
+}
+
+.talk2 p{
+  margin: 20px 0;
+	font-size: 1.6em;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:right;
+	font-weight:bold;
+	color: rgb(222, 225, 222);
+}
+
+.talk2 img{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+send2{
+  color:rgb(242, 245, 242);
+}
+
+comment2{
+  float: right;
+  color:rgb(222, 225, 222);
+}
+
+
+.talk3{
+  margin-left: 0px;
+  margin-top: 40px;
+  width: auto;
+  background-color: rgb(242, 245, 242);
+  border-radius: 40px;
+  box-shadow: 0px 0px 40px rgba(0,0,0,0.1);
+font-family: 'M PLUS 1p', sans-serif;
+padding: 3%;
+color: rgb(32,32,32);
+text-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.talk3 p2{
+  margin: 20px;
+	font-size: 64px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:left;
+	font-weight:bold;
+	color: transparent;
+	background: repeating-linear-gradient( 50deg, #248232 0, #2ba84a 100% );
+	-webkit-background-clip: text;
+}
+
+.talk3 p{
+  margin: 20px 0;
+	font-size: 1.8em;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:right;
+	font-weight:bold;
+	color: rgb(45, 58, 58);
+}
+
+.talk3 img{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+
+
+.chui{
+  margin-top: 0px;
+  width: auto;
+  height: 64px;
+  background-color: rgb(248, 248, 212);
+  border-radius: 40px;
+  box-shadow: 0px 0px 40px rgba(0,0,0,0.04);
+font-family: 'M PLUS 1p', sans-serif;
+padding: 3%;
+color: rgb(32,32,32);
+text-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.chui p{
+  margin-left: 20px;
+  margin-top: 4px;
+	font-size: 1.0em;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:left;
+	font-weight:bold;
+	color: rgb(45, 58, 58);
+}
+
+abnai{
+  float: right;
+  color:rgb(255, 91, 91);
+}
+   
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+  }
+  40%,100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+.downwar{
+  margin-top: 20px;
+  width: auto;
+  background-color: rgb(248, 248, 212);
+  border-radius: 40px;
+  box-shadow: 0px 0px 40px rgba(0,0,0,0.1);
+font-family: 'M PLUS 1p', sans-serif;
+padding: 3%;
+color: rgb(32,32,32);
+text-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.downwar p2{
+	font-size: 1.8em;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:center;
+	font-weight:bold;
+	color: rgb(255, 91, 91);
+}
+
+.downwar p{
+	font-size: 1em;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:left;
+	font-weight:bold;
+	color: rgb(45, 58, 58);
+}
+
+
+.dlw{
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  background-color: rgb(242, 245, 242);
+  border-radius: 25px;
+  box-shadow: 0px 0px 40px rgba(0,0,0,0.1);
+font-family: 'M PLUS 1p', sans-serif;
+padding: 3%;
+color: rgb(32,32,32);
+text-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.dlw p{
+  margin: 10px 0;
+	font-size: 1.6em;
+  font-family: 'Zen Maru Gothic', sans-serif;
+	text-align:center;
+	font-weight:bold;
+	color: rgb(45, 58, 58);
+}
+
+.dlbutton a{
+  font-family: 'BIZ UDGothic', sans-serif;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  width: auto;
+  height: 32px;
+  background-color: #0071E3;
+  border-radius: 25px;
+  color:#fff;
+  box-shadow: 0px 0px 40px rgba(0,0,0,0.1);
+}
+
+
+}
