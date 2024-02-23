@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="apple-touch-icon" type="image/png" href="../img/favicon/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="../img/favicon/icon-192x192.png">
+        <title>だいちまるのホームページ</title>
+        <style type="text/css">
+            ::selection {
+                background: rgb(255, 100, 150);
+                color: rgb(255,255,255);
+            }
+            hr{
+                margin-top: 1em;
+                margin-bottom: 1em;
+                border: none;
+                border-bottom: 1.6px solid #9a9a9a;
+            }
+
+            ul{
+                position: fixed;
+            }
+            li{
+                margin-left: 12px;
+                list-style-type: none;
+            }
+
+            li::before {
+                position: relative;
+                top: -2px;
+                left: -18px;
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                content: '';
+                border-radius: 100%;
+                background: #F51F75;
+            }
+            li span {
+                color: #161616;
+            }
+
+            body {
+                margin: 0px;
+            }
+            .contaner {
+                display: flex;
+                width: 100%;
+                height: 1080px;
+            }
+            .sidebar {
+                height: 100%;
+                width: 18%;
+                border-right: solid 4px #d0d0d0; 
+            }
+            .sidebar_on{
+                display: inline-block;
+                height: 100%;
+                width: calc(100% - 1px);
+                background-color: #F0F0FF;
+                border-right: solid 1px #aaaaaa; 
+            }
+            .sidebar_on li{
+                margin-top: 2em;
+                margin-bottom: 2em;
+            }
+            .sidebar_on p{
+                margin-top: 3em;
+            }
+            .body {
+                border-left: solid 1px #000; 
+                background-image: url("img/aboutmeback.png");
+                width: 82%;
+            }
+
+            .main{
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+                width: 900px;
+            }
+
+            .main p{
+                color:#161616;
+                font-size: 1em;
+                text-align: center;
+            }
+
+            .lp p{
+                color:#161616;
+                font-size: 1em;
+                text-align: left;
+            }
+
+            .kokoleft{
+                margin: 10px;
+                width: 350px;
+            }
+            .kokoright{
+                margin: 10px;
+                width: 550px;
+            }
+
+            h1{
+                color:#161616;
+                font-size: 2em;
+                text-align: center;
+            }
+            .backh1{
+                color:rgb(255, 230, 240);
+            }
+
+            img{
+                width: 350px;
+                height: 415px;
+                object-fit: cover;
+            }
+
+            @media screen and (max-width:1120px) {
+                ul{
+                    position: relative;
+                }
+                .body {
+                    border-left: none;
+                    background-image: url("img/aboutmeback.png");
+                    width: 95%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .sidebar_on{
+                    border-right: none;
+                }
+                .sidebar {
+                    height: fit-content;
+                    width: 100%;
+                    background-color: #F0F0FF;
+                    display: flex;
+                    border-right:none;
+                    border-bottom: solid 1px #000;    	/* 内側の線になる一本線の枠線をひく*/
+                }
+                .sidebar li{
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                }
+                .sidebar p{
+                    margin-top: 3em;
+                }
+                .sidebar ul{
+                    display: flex;
+                }
+
+                li{
+                    margin-left :16px;
+                    margin-right:16px;
+                    list-style-type: none;
+                }
+
+                li::before {
+                    position: relative;
+                    top: -2px;
+                    left: -9px;
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    content: '';
+                    border-radius: 100%;
+                    background: #F51F75;
+                }
+
+                .contaner {
+                    display: block;
+                    width: 100%;
+                    height: fit-content;
+                }
+                .main{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 100%;
+                }
+                .kokoleft{
+                    margin: 10px;
+                    width: 100%;
+                }
+                .kokoright{
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 100%;
+                }
+
+                img{
+                    width: 95%;
+                    height: 95%;
+                    object-fit: cover;
+                }
+
+                h1{
+                    color:#161616;
+                    font-size: 1.8em;
+                    text-align: center;
+                }
+
+                .main p{
+                    word-wrap: break-word;
+                    color:#161616;
+                    font-size: 1em;
+                    text-align: center;
+                }
+                .lp p{
+                    word-wrap: break-word;
+                    color:#161616;
+                    font-size: 1em;
+                    text-align: left;
+                    margin-right: 12px;
+                }
+            }
+        </style>
+    </head> 
+
+    <div class="contaner">
+        <div class="sidebar">
+            <div class="sidebar_on">
+                <ul>
+                    <li><a href="https://daichimarukana.com">サイト</a></li>
+                    <li><a href="index.html">あばうとみー ←いまここ</a></li>
+                    <li><a href="info.html">プロフィール</a></li>
+                    <li><a href="mybest_friend.html">親愛なる友人</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="body">
+            <h1>だいちまるのホームページ</h1>
+
+            <div class="main">
+                <div class="kokoleft">
+                    <img src="img/d-icon.gif" alt="だいちまるの画像">
+                    <div class="lp">
+                        <p>　だいちまる(だいちまる)<br>　生年月日 XXXX年X月X日<br>　血液型 不明<br>　<a href="info.html">プロフィール</a></p>
+                        <p>If you have any questions about my activities or would like to discuss future activities, please feel free to contact me at the email address below.</p>
+                        <p>mail:<a href="mailto:daichimarukana&#64;gmail.com">押せばわかるぞ</a></p>
+                        <p>所属:<br>おにくーず</p>
+                    </div>
+                </div>
+
+                <div class="kokoright">
+                    <p>★★★　最新情報　★★★</p>
+                    <hr>
+                    <div class="lp">
+                        <p><b>・ドラマ</b><br>　　　　ないね～</p>
+                    </div>
+                    <hr>
+                    <div class="lp">
+                        <p><b>・映画</b><br>　　　　404 Not found</p>
+                    </div>
+                    <hr>
+                    <div class="lp">
+                        <p><b>・TV</b><br>　　　　ねぇよ</p>
+                    </div>
+                    <hr>
+                    <div class="lp">
+                        <p><b>当サイトの内容は基本的に転載しないでください。<br>スクリーンショット撮影やスクリーンレコード等はOKとします。<br>お問い合わせはメールでご連絡をお願い致します。<br>また、このページは軽量化のため画像などのファイルを圧縮しております。画質劣化などありますがご了承ください。</b></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</html>

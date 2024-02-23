@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="apple-touch-icon" type="image/png" href="../img/favicon/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="../img/favicon/icon-192x192.png">
+        <title>だいちまるのホームページ</title>
+        <style type="text/css">
+            ::selection {
+                background: rgb(255, 100, 150);
+                color: rgb(255,255,255);
+            }
+            hr{
+                margin-top: 1em;
+                margin-bottom: 1em;
+                border: none;
+                border-bottom: 1.6px solid #9a9a9a;
+            }
+
+            li{
+                margin-left: 12px;
+                list-style-type: none;
+            }
+
+            ul{
+                position: fixed;
+            }
+            li::before {
+                position: relative;
+                top: -2px;
+                left: -18px;
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                content: '';
+                border-radius: 100%;
+                background: #F51F75;
+            }
+            li span {
+                color: #161616;
+            }
+
+            body {
+                margin: 0px;
+            }
+            .contaner {
+                display: flex;
+                width: 100%;
+                height: 1080px;
+            }
+            
+            .sidebar {
+                height: 100%;
+                width: 18%;
+                border-right: solid 4px #d0d0d0; 
+            }
+            .sidebar_on{
+                display: inline-block;
+                height: 100%;
+                width: calc(100% - 1px);
+                background-color: #F0F0FF;
+                border-right: solid 1px #aaaaaa; 
+            }
+            .sidebar_on li{
+                margin-top: 2em;
+                margin-bottom: 2em;
+            }
+            .sidebar_on p{
+                margin-top: 3em;
+            }
+            .body {
+                border-left: solid 1px #000; 
+                background-image: url("img/aboutmeback.png");
+                width: 82%;
+            }
+
+            .main{
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+                width: 900px;
+            }
+
+            .main p{
+                color:#161616;
+                font-size: 1em;
+                text-align: center;
+            }
+
+            .lp p{
+                color:#161616;
+                font-size: 1em;
+                text-align: left;
+            }
+
+            .kokoleft{
+                margin-left: auto;
+                margin-right: auto;
+                width: 80%;
+            }
+
+            h1{
+                color:#161616;
+                font-size: 2em;
+                text-align: center;
+            }
+            .backh1{
+                color:rgb(255, 230, 240);
+            }
+
+            img{
+                width: 350px;
+                height: 415px;
+                object-fit: cover;
+            }
+
+            @media screen and (max-width:1120px) {
+                ul{
+                    position: relative;
+                }
+                .body {
+                    border-left: none;
+                    background-image: url("img/aboutmeback.png");
+                    width: 95%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .sidebar_on{
+                    border-right: none;
+                }
+                .sidebar {
+                    height: fit-content;
+                    width: 100%;
+                    background-color: #F0F0FF;
+                    display: flex;
+                    border-right:none;
+                    border-bottom: solid 1px #000;    	/* 内側の線になる一本線の枠線をひく*/
+                }
+                .sidebar li{
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                }
+                .sidebar p{
+                    margin-top: 3em;
+                }
+                .sidebar ul{
+                    display: flex;
+                }
+
+                li{
+                    margin-left :16px;
+                    margin-right:16px;
+                    list-style-type: none;
+                }
+
+                li::before {
+                    position: relative;
+                    top: -2px;
+                    left: -9px;
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    content: '';
+                    border-radius: 100%;
+                    background: #F51F75;
+                }
+
+                .contaner {
+                    display: block;
+                    width: 100%;
+                    height: fit-content;
+                }
+                .main{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 100%;
+                }
+                .kokoleft{
+                    margin: 10px;
+                    width: 100%;
+                }
+                .kokoright{
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 100%;
+                }
+
+                img{
+                    width: 95%;
+                    height: 95%;
+                    object-fit: cover;
+                }
+
+                h1{
+                    color:#161616;
+                    font-size: 1.8em;
+                    text-align: center;
+                }
+
+                .main p{
+                    word-wrap: break-word;
+                    color:#161616;
+                    font-size: 1em;
+                    text-align: center;
+                }
+                .lp p{
+                    word-wrap: break-word;
+                    color:#161616;
+                    font-size: 1em;
+                    text-align: left;
+                    margin-right: 12px;
+                }
+            }
+        </style>
+    </head> 
+
+    <div class="contaner">
+        <div class="sidebar">
+            <div class="sidebar_on">
+                <ul>
+                    <li><a href="https://daichimarukana.com">サイト</a></li>
+                    <li><a href="index.html">あばうとみー</a></li>
+                    <li><a href="info.html">プロフィール ←いまここ</a></li>
+                    <li><a href="mybest_friend.html">親愛なる友人</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="body">
+          <h1>だいちまるのプロフィール</h1>
+
+            <div class="main">
+                <div class="kokoleft">
+                    <div class="lp">
+                        <p>本名 : 山田 葵(偽名)</p>
+                        <p>活動名 : だいちまる,だちるちまる,だちる,ちまる、など</p>
+                        <p>生年月日 : 非公開</p>
+                        <p>年齢 : 非公開</p>
+                        <p>血液型 : 未検査</p>
+                        <p>出身地 : 地球</p>
+                        <p>学歴 : 非公開</p>
+                        <p>サイズ : 身長175cm 体重非公開 靴28cm</p>
+                        <p>デビュー : 2020/04/30よりインターネット上で公開側として活動開始<br>それ以前は見る専だった。</p>
+                        <p>所属 : おにくーず</p>
+                        <hr>
+                        <p>だいちまるから自己紹介</p>
+                        <p>ネット上で色々やってる人間です。<br>ゆっくり実況、アプリ開発、SNS開発、サイトづくり、その他諸々いろいろネットの海をさまよってます。<br>いっつも何か作ってます。</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</html>

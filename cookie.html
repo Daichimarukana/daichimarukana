@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<link rel="apple-touch-icon" type="image/png" href="/img/favicon/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/img/favicon/icon-192x192.png">
+<link rel="stylesheet" href="/css/style.css">
+<title>だいちまる | だいちまるのさいと</title>
+</head>
+
+<header>
+    <div class="inheader">
+        <div class="logo">
+            <a href="/index.html"><img src="/img/daichimaru_logo.svg"></a>
+        </div>
+        <div class="links">
+            <a href="/index.html#aboutme">About Me</a>
+            <a href="/index.html#sns">SNS</a>
+            <a href="/index.html#service">Service</a>
+            <a href="/index.html#contact">Contact Me</a>
+        </div>
+    </div>
+</header>
+<body>
+    <main>
+        <div class="cookie" id="cookie">
+            <h1>Cookie Eatinger</h1>
+            <p>クッキー食べよ！！！<br>
+                ※このページではCookieを使用しています。保持期間は最後にクッキーをあげた時から1年間です。<br>
+                　Cookieを削除するとクッキーをあげた記録はなくなります。</p>
+            <div class="cookie_main">
+                <h3><img src="/img/Cookie_Eatinger/cookie.png"></h3>
+                <img id="cat_img" src="/img/Cookie_Eatinger/pa.png">
+                <div class="buttons">
+                    <button id="add_cookie" class="add_cookie"><img src="/img/Cookie_Eatinger/cookie.png">クッキーをあげる！</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            if(navigator.cookieEnabled){
+                var count = 0;
+                let cookie_cookie = document.cookie.split(';');
+                cookie_cookie.forEach(function(value) {
+                    let content = value.split('=');
+                    if(content[0] == "cookie"){
+                        count = Number(content[1]);
+                    }else{
+                        count = 0;
+                    }
+                })
+
+                $('h3').html("<img src=\"/img/Cookie_Eatinger/cookie.png\">"+count);
+
+                $("#add_cookie").click(function(){
+                    if (count > 2048000) {
+                        count = count+8192;
+                    } else if (count >= 1024000) {
+                        count = count+4096;
+                    } else if (count >= 512000) {
+                        count = count+2048;
+                    } else if (count >= 256000) {
+                        count = count+1024;
+                    } else if (count >= 128000) {
+                        count = count+512;
+                    } else if (count >= 64000) {
+                        count = count+256;
+                    } else if (count >= 32000) {
+                        count = count+128;
+                    } else if (count >= 16000) {
+                        count = count+64;
+                    } else if (count >= 8000) {
+                        count = count+32;
+                    } else if (count >= 4000) {
+                        count = count+16;
+                    } else if (count >= 2000) {
+                        count = count+8;
+                    } else if (count >= 1000) {
+                        count = count+4;
+                    } else if (count >= 500) {
+                        count = count+2;
+                    } else if (count <= 500) {
+                        count = count+1;
+                    }
+
+                    var dt = new Date();
+                    dt.setFullYear(dt.getFullYear()+1)
+                    var new_expiress = dt.toLocaleDateString()
+
+                    document.cookie = "cookie="+count+"; expires="+new_expiress+"";
+
+                    console.log("🍪"+count+new_expiress);
+
+                    $('h3').html("<img src=\"/img/Cookie_Eatinger/cookie.png\">"+count);
+
+                    $("#cat_img").attr("src", "/img/Cookie_Eatinger/pa_cookie.png");
+                    setTimeout(async () => {
+                        $("#cat_img").attr("src", "/img/Cookie_Eatinger/ku.png");
+                        setTimeout(async () => {
+                            $("#cat_img").attr("src", "/img/Cookie_Eatinger/pa.png");
+                        }, 500);
+                    }, 250);
+
+                });
+            }else{
+                $('p').html("Cookie Eatingerで遊ぶにはCookieの有効化が必要です！");
+                $('h3').html("<img src=\"/img/Cookie_Eatinger/cookie.png\">0");
+                $("#cat_img").attr("src", "/img/Cookie_Eatinger/oops.png");
+                $("#add_cookie").prop("disabled", true);
+            }
+        </script>
+
+        
+    </main>
+</body>
+<footer>
+    <p>&copy; 2022 - 2024 daichimarukana</p>
+    <a href="/rule/privacy_policy.html">プライバシーポリシー</p>
+    <a href="/rule/terms.html">利用規約</p>
+</footer>
+
+</html>

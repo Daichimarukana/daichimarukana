@@ -1,171 +1,198 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>だいちまるのさいと</title>
-        <style type="text/css">
-            ::selection {
-                background: rgb(255, 100, 150);
-                color: rgb(255,255,255);
-            }
-            hr{
-                margin-top: 1em;
-                margin-bottom: 1em;
-                border: none;
-                border-bottom: 1.6px solid #9a9a9a;
-            }
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<link rel="apple-touch-icon" type="image/png" href="/img/favicon/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/img/favicon/icon-192x192.png">
+<link rel="stylesheet" href="/css/style.css">
+<title>だいちまる | だいちまるのさいと</title>
+</head>
 
-            ul{
-                position: fixed;
-            }
-            li{
-                margin-left: 12px;
-                list-style-type: none;
-            }
-
-            li::before {
-                position: relative;
-                top: -2px;
-                left: -18px;
-                display: inline-block;
-                width: 10px;
-                height: 10px;
-                content: '';
-                border-radius: 100%;
-                background: #F51F75;
-            }
-            li span {
-                color: #161616;
-            }
-
-            body {
-                margin: 0px;
-            }
-        
-            .body {
-                margin: 0px;
-                background-image: url("img/aboutmeback.png");
-                width: 99%;
-                height: 90dvh;
-            }
-
-            .main{
-                display: flex;
-                margin-left: auto;
-                margin-right: auto;
-                width: 100%;
-            }
-
-            .main p{
-                margin-left: auto;
-                margin-right: auto;
-                color:#161616;
-                font-size: 16px;
-                text-align: center;
-            }
-
-            .lp p{
-                color:#161616;
-                font-size: 1em;
-                text-align: left;
-            }
-
-            h1{
-                color:#161616;
-                font-size: 2em;
-                text-align: center;
-            }
-            .backh1{
-                color:rgb(255, 230, 240);
-            }
-
-            img{
-                width: 350px;
-                height: 415px;
-                object-fit: cover;
-            }
-
-            @media screen and (max-width:1120px) {
-                ul{
-                    position: relative;
-                }
-                .body {
-                    border-left: none;
-                    background-image: url("img/aboutmeback.png");
-                    width: 95%;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-
-                li{
-                    margin-left :16px;
-                    margin-right:16px;
-                    list-style-type: none;
-                }
-
-                li::before {
-                    position: relative;
-                    top: -2px;
-                    left: -9px;
-                    display: inline-block;
-                    width: 10px;
-                    height: 10px;
-                    content: '';
-                    border-radius: 100%;
-                    background: #F51F75;
-                }
-
-                .contaner {
-                    display: block;
-                    width: 100%;
-                    height: fit-content;
-                }
-                .main{
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                    width: 100%;
-                }
-                img{
-                    width: 95%;
-                    height: 95%;
-                    object-fit: cover;
-                }
-
-                h1{
-                    color:#161616;
-                    font-size: 1.8em;
-                    text-align: center;
-                }
-
-                .main p{
-                    word-wrap: break-word;
-                    color:#161616;
-                    font-size: 1em;
-                    text-align: center;
-                }
-                .lp p{
-                    word-wrap: break-word;
-                    color:#161616;
-                    font-size: 1em;
-                    text-align: left;
-                    margin-right: 12px;
-                }
-            }
-        </style>
-    </head> 
-
-    <div class="contaner">
-        <div class="body">
-            <h1>だいちまるのさいと</h1>
-
-            <div class="main">
-                <p>リニューアル中...<br>
-                    更新作業が完了するまでご利用いただけません。<br>
-                    ご迷惑をおかけします。</p>
-            </div>
-
+<header>
+    <div class="inheader">
+        <div class="logo">
+            <a href="index.html"><img src="/img/daichimaru_logo.svg"></a>
+        </div>
+        <div class="links">
+            <a href="#aboutme">About Me</a>
+            <a href="#sns">SNS</a>
+            <a href="#service">Service</a>
+            <a href="#contact">Contact Me</a>
         </div>
     </div>
+</header>
+<body>
+    <div class="top_image">
+        <div class="background_image">
+            <img id="background_image" src="/img/top_image/img1.png">
+        </div>
+        <div class="toptext">
+            <h3>
+                <script type="text/javascript">
+                    today = new Date();
+                    today_hour = today.getHours();
+                
+                    if (today_hour == 0) msg = "こんばんは" ;
+                    if (today_hour == 1) msg = "こんばんは";
+                    if (today_hour == 2) msg = "こんばんは";
+                    if (today_hour == 3) msg = "こんばんは";
+                    if (today_hour == 4) msg = "おはようございます";
+                    if (today_hour == 5) msg = "おはようございます";
+                    if (today_hour == 6) msg = "おはようございます";
+                    if (today_hour == 7) msg = "おはようございます";
+                    if (today_hour == 8) msg = "おはようございます";
+                    if (today_hour == 9) msg = "おはようございます";
+                    if (today_hour == 10) msg = "こんにちは";
+                    if (today_hour == 11) msg = "こんにちは";
+                    if (today_hour == 12) msg = "こんにちは";
+                    if (today_hour == 13) msg = "こんにちは";
+                    if (today_hour == 14) msg = "こんにちは";
+                    if (today_hour == 15) msg = "こんにちは";
+                    if (today_hour == 16) msg = "こんにちは";
+                    if (today_hour == 17) msg = "こんにちは";
+                    if (today_hour == 18) msg = "こんばんは";
+                    if (today_hour == 19) msg = "こんばんは";
+                    if (today_hour == 20) msg = "こんばんは";
+                    if (today_hour == 21) msg = "こんばんは";
+                    if (today_hour == 22) msg = "こんばんは";
+                    if (today_hour == 23) msg = "こんばんは";
+                
+                    document.write(msg+'!');
+                </script>
+            </h3>
+            <h1>
+                <script type="text/javascript">
+                    rand = Math.floor(Math.random()*9);
+                                        
+                    if (rand == 0) msg = "だいちまる";
+                    if (rand == 1) msg = "だちるちまる";
+                    if (rand == 2) msg = "だちる";
+                    if (rand == 3) msg = "ちまる";
+                    if (rand == 4) msg = "daichimarukana";
+                    if (rand == 5) msg = "@daichimarukana";
+                    if (rand == 6) msg = "脆弱な人間";
+                    if (rand == 7) msg = "編集したい人";
+                    if (rand == 8) msg = "山田 葵";
+                                            
+                    document.write(msg);
+                </script>
+            </h1>
+            <h3>のサイトへようこそ</h3>
+        </div>
+    </div>
+    <main>
+        <div class="about_me" id="aboutme">
+            <h1>About <i><span style="color: #f51f75;font-family: 'Monomaniac One'; font-weight: normal; font-size: 74px;">me!</span></i></h1>
+            <div class="flexbox">
+                <p>だいちまるです！<br>
+                    そこら辺にいるゆっくり実況者かもしれないです<br>
+                    ゆっくり実況者でいられるよう頑張っています！<br>
+                    アプリ開発やSNS開発、その他諸々創作活動も行ってます！<br>
+                    <a href="/aboutme/index.html">だいちまるのホームページ</a><br>
+                    <a href="/others/">ノート(旧だいちまるのメモ)</a>
+                </p>
+                <img class="icon_img" src="img/my_icon.png">
+            </div>
+        </div>
+        <div class="youtube" id="youtube">
+            <h1><span style="color: #ffc80f;">ゆっくり</span><span style="color: #ff3232;">実況</span>やってます</h1>
+            <p>最新動画です～！</p>
+            <div class="video-wrap">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/?list=UUkilmFnwB_3pSMFsey6ZKrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="sns" id="sns">
+            <h1><span style="color: #1d9bf0;">SNS</span> Links!</h1>
+            <p>自分のやってるSNS一覧です！</p>
+            <div class="flexbox">
+                <a href="https://www.youtube.com/channel/UCkilmFnwB_3pSMFsey6ZKrA" target="_blank"><span style="color: #FF0000;">YouTube</span></a>
+                <a href="https://twitter.com/daichimarukana" target="_blank"><span style="color: #1d9bf0;">Twitter</span></a>
+                <a href="https://misskey.io/@daichimarukana" target="_blank"><span style="color: #82ad00;">Misskey.io</span></a>
+                <a href="https://marshmallow-qa.com/daichimarukana" target="_blank"><span style="color: #f3969a;">マシュマロ</span></a>
+                <a href="https://qiita.com/daichimarukana" target="_blank"><span style="color: #55c500;">Qiita</span></a>
+                <a href="javascript:void(0);" onclick="disco()"><span style="color: #5865F2;">Discord</span></a>
+                <a href="https://github.com/Daichimarukana" target="_blank"><span style="color: #1f2328;">Github</span></a>
+                <a href="https://www.nicovideo.jp/user/126885705" target="_blank"><span style="color: #252525;">ニコニコ(eR)</span></a>
+                <a href="https://www.pixiv.net/users/61621173" target="_blank"><span style="color: #0096fa;">pixiv</span></a>
+                <a href="https://taittsuu.com/users/daichimarukana" target="_blank"><span style="color: #cccccc;">タイッツー</span></a>
+                <a href="https://bsky.app/profile/daichimarukana.com" target="_blank"><span style="color: #0085ff;">Bluesky</span></a>
+                <a href="https://dev.uwuzu.net/@daichimarukana" target="_blank"><span style="color: #AFC832;">dev.uwuzu.net</span></a>
+                <a href="https://uwuzunext.info/@daichimarukana" target="_blank"><span style="color: #00bfff;">かんきつさーばー</span></a>
+                <a href="https://tmitter.jct.tokyo/users/daichimarukana" target="_blank"><span style="color: #FFE200;">つみったー（仮）</span></a>
+            </div>
+            <script >
+                function disco() {
+                    alert("だいちまる鯖まで来てね！");
+                }
+            </script>
+        </div>
+        <div class="service" id="service">
+            <h1><span style="color: #0099ff;">Service</span> & <span style="color: #1870ac;">Download</span></h1>
+            <div class="flexbox">
+                <div>
+                    <p>運営しているサービスや配布しているソフトウェアはこちらから！</p>
+                    <a class="link_button" href="/service/index.html">サービス一覧</a>
+                    
+                </div>
+                <img class="service_img" src="/service/img/top_img.png">
+            </div>
+        </div>
+
+        <div class="discord" id="discord">
+            <h1><span style="color: #5865F2;">Discord</span> Server</h1>
+            <div class="flexbox">
+                <img class="icon_img" src="/service/img/icon/daichimaru_server_icon.png">
+                <div>
+                    <p>Discord鯖はこちらから！<br>最近は少し過疎ってますが楽しめるかも？！</p>
+                    <a class="link_button" href="https://discord.gg/eq9yD2cRQc" target="_blank" rel="noopener noreferrer">Join to だいちまる鯖!!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="support" id="support">
+            <h1>uwuzu <span style="color: #ff6d00;">Support</span></h1>
+            <div>
+                <p>uwuzuの開発を日々進めさせていただいておりますだいちまるです。<br>
+                日頃よりuwuzuをご利用いただき誠にありがとうございます。<br>
+                uwuzuの開発版サーバーであるdev.uwuzu.netのサーバー代金を私だいちまるのポケットマネーからお支払いしているのですが、<br>
+                利用者も少ないなか、少ない資金で長期的に運営するには耐えられないと判断し、ご支援の受付を開始させていただきました。<br><br>
+                もちろんuwuzuは無料でご利用いただけますし、dev.uwuzu.netのユーザー様も無料でご利用いただけます。<br><br>
+                <b>僕にお金をあげる必要なんてありません。</b><br><br>
+                ですが、このままだといつか僕としても運営意義がないと感じるようになるでしょうし、気が変わったりお金が底を尽きたら運営が出来なくなってしまいデバッグや開発が滞ることになってしまいます。<br>
+                そのため、大した返礼品もありませんが、よろしければご支援のほどお願いしたく思います。<br>
+                また、大変勝手ですが、patreonでの受付は終了しました。</p>
+                <a class="link_button" href="https://daichimarukana.fanbox.cc/" target="_blank" rel="noopener noreferrer">PIXIV FANBOX</a>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <h1><span style="color: #007aff;">Contact</span> <span style="color: #34c759;">Me</span></h1>
+            <div>
+                <p>ご連絡は可能であればTwitterのDMかE-Mailでよろしくお願い致します！<br>お仕事のご依頼から軽い質問・相談まで受け付けておりますのでお気軽にどうぞ！<br>※迷惑メールなどは受け付けておりません。</p>
+                <a class="link_button" href="mailto:daichimarukana&#64;gmail.com">E-Mail</a>
+                <a class="link_button" href="https://twitter.com/daichimarukana" target="_blank" rel="noopener noreferrer">Twitter DM</a>
+            </div>
+        </div>
+
+        
+    </main>
+</body>
+<footer>
+    <p>&copy; 2022 - 2024 daichimarukana</p>
+    <a href="/rule/privacy_policy.html">プライバシーポリシー</p>
+    <a href="/rule/terms.html">利用規約</p>
+</footer>
+
+<script>
+    window.onload = function(){
+        var ele = document.getElementById("background_image");
+        var n = Math.floor(Math.random() * 15)+1;
+        ele.src = "/img/top_image/img"+n+".png";
+    }
+</script>
+
 </html>
