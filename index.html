@@ -1,262 +1,171 @@
 <!DOCTYPE html>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-          var agent = navigator.userAgent; //iPhone用の記述
-          if(agent.search(/iPhone/) != -1){
-                  $("#apple").text("当サイトへ訪問していただきありがとうございます。\n当サイトはiOSでの表示に対応しておりませんのでレイアウトが崩れることがあります。\nご了承くださいませ。");
-                  $('#apple').html($('<dummy>').text(str).html().replace(/\n/g, '<br>'));
-          }else if(agent.search(/Android/) != -1){　//Android用の記述
-                  $("#google").text("当サイトへ訪問していただきありがとうございます。\n当サイトはAndroid OSでの表示に対応しておりませんのでレイアウトが崩れることがあります。\nご了承くださいませ。");
-                  $('#google').html($('<dummy>').text(str).html().replace(/\n/g, '<br>'));
-          }else if(agent.search(/iPad/) != -1){　//Android用の記述
-                  $("#google").text("当サイトへ訪問していただきありがとうございます。\n当サイトはiPad OSでの表示に対応しておりませんのでレイアウトが崩れることがあります。\nご了承くださいませ。");
-                  $('#google').html($('<dummy>').text(str).html().replace(/\n/g, '<br>'));
-     }
-  });
-
-  </script>
-<html lang="jp">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="apple-touch-icon" type="image/png" href="img/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="img/icon-192x192.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dela+Gothic+One&family=M+PLUS+1p:wght@800&family=Mochiy+Pop+One&family=Noto+Sans+JP:wght@700&family=Roboto:wght@900&display=swap" rel="stylesheet">    <title>だいちまるのさいと</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css" />
-  </head>
-  <body>
-    <header id="header">
-        <a class="notsita" href="https://daichimarukana.com">
-        <h1>だいちまる</h1>
-      </a>
-      <nav>
-      <ul id="g-navi">
-        <li><a href="#area-1">誰だよ！！！</a></li>
-        <li><a href="#area-2"><font color=#FFC80F>SNS</a></li></font>
-        <li><a href="#area-3"><font color=#F51F75>配付ソフト</a></li></font>
-        <li><a href="#area-4"><font color=#5865F2>Discord鯖</a></li></font>
-      </ul>
-    </nav>
-    </header>
-  <main>
-  </body>
-  <div class="bobby"> 
-  <script type="text/javascript">
-    rand = Math.floor(Math.random()*8);
-                          
-    if (rand == 0) msg = "あいあむだいちまる";
-    if (rand == 1) msg = "編集したい";
-    if (rand == 2) msg = "だいちまるです";
-    if (rand == 3) msg = "ようこそだいちまるのサイトへ！";
-    if (rand == 4) msg = "daichimarukana.com";
-    if (rand == 5) msg = "hensyuusitai.com";
-    if (rand == 6) msg = "@daichimarukana";
-    if (rand == 7) msg = "daichimaru.com";
-                            
-    document.write(msg);
-    </script>
-
-    </div>
-    <font color=#FFFFFF>
-      <p id="apple"></p>
-      <p id="google"></p>
-    </font>
-      <div id="area-1">
-      </div>
-<main>
-<div class="area">
-
-    <div class="mmain"> 
-      <p>だいちまるとは</p>
-
-      <div class="serv-image">
-        <img src="img/d-icon.png" alt="Join to server" class="d-serv" />
-      </div>
-
-    </div>
-    <div class="mmains"> 
-      <p>そこらへんにいるかもしれないゆっくり実況者。</p>
-      <p>ゆっくり実況者でいられるよう頑張っている</p>
-      <div class="sitasen">
-        
-      <a href="sonota/memo.html">だいちまるのメモ</a>
-    </div>
-      <div class="sukima"> 
-
-        <div class="mmain"> 
-          <p>最新動画</p>
-          <div class="video-wrap">
-        <div class="video"> 
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/?list=UUkilmFnwB_3pSMFsey6ZKrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-</div>
-<div id="area-2">
-<div class="sukima"> 
-</div>
-<font color=#FFC80F>
-<div class="mmain"> 
-  <p>SNS</p>
-</font>
-</div>
-  <div class="mmains"> 
-    <p>SNSはいろいろやってますぜ</p>
-    <p>最近はYouTubeが伸び悩んでいるので見てやってください。</p>
-  </div>
-  <div class="sosyal">
-      <div class="sukima"> 
-      </div>
-        <center>
-            <script >
-            function discos() {
-            alert("だいちまる鯖まで来てね！");
+<html lang="ja">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>だいちまるのさいと</title>
+        <style type="text/css">
+            ::selection {
+                background: rgb(255, 100, 150);
+                color: rgb(255,255,255);
             }
-    </script>
-          <a href="https://www.youtube.com/channel/UCkilmFnwB_3pSMFsey6ZKrA" class="youtube">YouTube</a>
-          <a href="https://twitter.com/daichimarukana" class="twitter">Twitter</a>
-          <a href="https://misskey.io/@daichimarukana" class="misskey">misskey.io</a>
-          <a href="https://marshmallow-qa.com/daichimarukana" class="mash">マシュマロ</a>
-          <a href="https://qiita.com/daichimarukana" class="qiita">Qiita</a>
-          </div>
+            hr{
+                margin-top: 1em;
+                margin-bottom: 1em;
+                border: none;
+                border-bottom: 1.6px solid #9a9a9a;
+            }
+
+            ul{
+                position: fixed;
+            }
+            li{
+                margin-left: 12px;
+                list-style-type: none;
+            }
+
+            li::before {
+                position: relative;
+                top: -2px;
+                left: -18px;
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                content: '';
+                border-radius: 100%;
+                background: #F51F75;
+            }
+            li span {
+                color: #161616;
+            }
+
+            body {
+                margin: 0px;
+            }
+        
+            .body {
+                margin: 0px;
+                background-image: url("img/aboutmeback.png");
+                width: 99%;
+                height: 90dvh;
+            }
+
+            .main{
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+            }
+
+            .main p{
+                margin-left: auto;
+                margin-right: auto;
+                color:#161616;
+                font-size: 16px;
+                text-align: center;
+            }
+
+            .lp p{
+                color:#161616;
+                font-size: 1em;
+                text-align: left;
+            }
+
+            h1{
+                color:#161616;
+                font-size: 2em;
+                text-align: center;
+            }
+            .backh1{
+                color:rgb(255, 230, 240);
+            }
+
+            img{
+                width: 350px;
+                height: 415px;
+                object-fit: cover;
+            }
+
+            @media screen and (max-width:1120px) {
+                ul{
+                    position: relative;
+                }
+                .body {
+                    border-left: none;
+                    background-image: url("img/aboutmeback.png");
+                    width: 95%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                li{
+                    margin-left :16px;
+                    margin-right:16px;
+                    list-style-type: none;
+                }
+
+                li::before {
+                    position: relative;
+                    top: -2px;
+                    left: -9px;
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    content: '';
+                    border-radius: 100%;
+                    background: #F51F75;
+                }
+
+                .contaner {
+                    display: block;
+                    width: 100%;
+                    height: fit-content;
+                }
+                .main{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 100%;
+                }
+                img{
+                    width: 95%;
+                    height: 95%;
+                    object-fit: cover;
+                }
+
+                h1{
+                    color:#161616;
+                    font-size: 1.8em;
+                    text-align: center;
+                }
+
+                .main p{
+                    word-wrap: break-word;
+                    color:#161616;
+                    font-size: 1em;
+                    text-align: center;
+                }
+                .lp p{
+                    word-wrap: break-word;
+                    color:#161616;
+                    font-size: 1em;
+                    text-align: left;
+                    margin-right: 12px;
+                }
+            }
+        </style>
+    </head> 
+
+    <div class="contaner">
+        <div class="body">
+            <h1>だいちまるのさいと</h1>
+
+            <div class="main">
+                <p>リニューアル中...<br>
+                    更新作業が完了するまでご利用いただけません。<br>
+                    ご迷惑をおかけします。</p>
+            </div>
+
         </div>
-      </center>
-  </div>
-  <div class="sosyal">
-    <a span="#" onclick="discos()" class="disco">Discord</a>
-    <a href="https://github.com/Daichimarukana" class="github">Github</a>
-    <a href="https://www.nicovideo.jp/user/126885705" class="niconico">ニコニコ(eR)</a>
-    <a href="https://www.pixiv.net/users/61621173" class="pixiv" title="みるだけです">pixiv</a>
-  </div>
-
-    <a href="https://taittsuu.com/users/daichimarukana" class="taittu" title="わからん">たいっつー</a>
-    <a href="https://bsky.app/profile/daichimarukana.com" class="bsky" title="BLUESKY">Bluesky</a>
-    <a href="https://dev.uwuzu.net/@daichimarukana" class="uwuzu" title="どうも開発者です。">dev.uwuzu.net</a>
-  </div>
-</div>
-
-<div class="sukima">
-
-</div>
-<div id="area-3">
-  <font color=#F51F75>
-    <div class="mmain"> 
-      <p>配付ソフト</p>
-    </font>
-<div class="mmains"> 
-  <p>サイトとかPCアプリとか作ってるど～</p>
-
-  <div id="cards"><!-- カードレイアウトをラッピング -->
-    <section class="cards-list">
-        <a class="cards-link" href="https://daichimarukana.com/sonota/kiji/twimer/">
-            <figure class="cards-figure"><img src="sonota/kiji/twimer/img/home.png"></figure>
-            <h2 class="cards-title">Twimer</h2>
-            <p class="cards-text-tax">Twitter用タイマー</p>
-        </a>
-    </section>
-
-    <section class="cards-list">
-        <a class="cards-link" href="https://daichimarukana.com/sonota/kiji/goju/">
-            <figure class="cards-figure"><img src="img/jinkoumunou.png"></figure>
-            <h2 class="cards-title">ごじゅ</h2>
-            <p class="cards-text-tax">ただの人工無能</p>
-        </a>
-    </section>
-
-
-    <section class="cards-list">
-        <a class="cards-link" href="https://over18.xn--48ji8b3b1c1dg4uro5h4fq416b.com/generate">
-            <figure class="cards-figure"><img src="img/adultsamune.png"></figure>
-            <h2 class="cards-title">はい&いいえサイト</h2>
-            <p class="cards-text-tax">18歳未満でも「はい」を</p>
-        </a>
-    </section>
-    
-    <section class="cards-list">
-        <a class="cards-link" href="https://daichimarukana.com/sonota/kiji/bigclock/index.html">
-            <figure class="cards-figure"><img src="https://daichimarukana.com/sonota/kimg/sam.png"></figure>
-            <h2 class="cards-title">くそでか時計</h2>
-            <p class="cards-text-tax">Android/Windows向けのでっかい時計</p>
-        </a>
-    </section>
-    <a href="https://daichimarukana.com/service" class="service" title="だいちまるが公開しているサービスの状況を確認できます">サービス状況</a>
-</div><!-- カードレイアウトをラッピング -->
-
-</div>
-<div id="area-4">
-  <font color=#5865F2>
-    <div class="mmain"> 
-      <p>Discord鯖</p>
-    </font>
-    <div class="mmains"> 
-      <p>Discordでだいちまる鯖開いてます！</p>
-      <p>下のリンクから行けます！！！</p>
-      <div class="daichiserv">
-        <font color=#FFFFFF>
-            <p>だいちまる鯖</p>
-        </font>
-          <div class="serv-image">
-            <img src="img/だいちまる鯖(本).png" alt="Join to server" class="serv-serv" />
-          </div>
-            <a href="https://daichimarukana.com/daichimaruserver" class="join" title="さーばーいりぐちにとびます">Join to server</a>
-        </div>
     </div>
-</div>
-</div>
-
-<div id="area-4">
-  <font color=#ff6510>
-    <div class="mmain"> 
-      <p>親愛なる友人</p>
-    </font>
-    <div class="mmains"> 
-      <p>YouTubeのチャンネルアイコンの取得方法がわからないので！</p>
-      <p>ともだちのイメージカラーでゆるしてください！</p>
-        <a href="https://www.youtube.com/c/modurili" class="modurili" title="もづさんのようつべ">もづりぃさん</a>
-<a href="https://www.youtube.com/@kocha_gayu_ch" class="kouchagayu" title="こうちゃさんのようつべ">紅茶粥さん</a>
-</div>
-
-<div id="area-5">
-  <div class="sukima"> 
-  </div>
-  <font color=#FFC832>
-  <div class="mmain"> 
-    <p>ご寄付のお受付</p>
-  </font>
-  </div>
-    <div class="support"> 
-      <p>uwuzuの開発を日々進めさせていただいておりますだいちまるです。</p>
-      <p>uwuzuの開発版サーバーであるdev.uwuzu.netのサーバー代を私だいちまるのポケットマネーから支払っているため現在大変非常にポケットマネーの減り具合が早いです。</p>
-      <p>そこで寄付のお受付を始めさせていただきました。</p>
-      <p>もちろんはuwuzuは無料でご利用いただけますしdev.uwuzu.netのユーザー様も引き続き無料でご利用いただけます。</p>
-      <p><i>僕にお金をあげる必要なんてありません。</i></p>
-      <p>ですが、このままだといつか僕としても運営意義がないと感じるようになるでしょうし、気が変わったりお金が底を尽きたら運営が出来なくなってしまいデバッグや開発が滞ることになってしまいます。</p>
-      <p>大した返礼品もありませんがもしよろしければご支援のほうよろしくお願いいたします。</p>
-      <p>大変勝手ではございますがpatreonでの受付は終了しました。</p>
-    </div>
-      <section class="cards-list">
-        <a class="cards-link" href="https://daichimarukana.fanbox.cc/">
-            <figure class="cards-figure"><img src="img/pixivfanbox.png"></figure>
-            <h2 class="cards-title">pixivFANBOX</h2>
-            <p class="cards-text-tax">pixivFANBOXでの支援方法です。<br>通貨は日本円でのお支払いとなります。</p>
-        </a>
-      </section>
-    </div>
-    
-  </div>
-
-</main>
-
-  <div class="fter">
-    <p>
-      &copy; 2022 - 2024 <strong>Daichimaru</strong>
-    </p>
-  </div>
+</html>
