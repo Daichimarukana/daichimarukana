@@ -835,11 +835,11 @@ main .service_box .right_text .status .text{
         margin-top: 16px;
         width: fit-content;
         height: fit-content;
-        max-width: 100%;
-        max-height: 50dvh;
+        max-width: 1080px;
+        max-height: 32dvh;
         border-radius: 12px;
+        object-fit: cover;
     }
-
     .flexlink{
         display: block;
         flex-wrap: wrap;
