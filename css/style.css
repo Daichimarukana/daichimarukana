@@ -223,6 +223,31 @@ main a{
     font-weight: bold;
 }
 
+.notification{
+    width: 100%;
+    overflow: hidden;
+    height: fit-content;
+    background-color: #FFF;
+    border: solid 1px #ff3232;
+    border-radius: 15px;
+}
+.notification h1{
+    background-color: #ff3232;
+    color: #FFF;
+    font-size: 32px;
+    padding: 4px 32px 4px 12px;
+}
+.notification p{
+    margin: 12px 12px 6px 12px;
+    font-size: 16px;
+}
+.notification a{
+    display: block;
+    margin: 6px 12px 12px 12px;
+    font-size: 16px;
+    color: #ff3232;
+}
+
 .about_me{
     padding-top: 128px;
     margin-top: -128px;
@@ -305,6 +330,11 @@ main a{
     border-radius: 50%;
     margin-left: 0px;
     margin-right: auto;
+}
+
+.contact{
+    padding-top: 128px;
+    margin-top: -128px;
 }
 
 .support{
@@ -830,10 +860,10 @@ main .service_box .right_text .status .text{
         margin-top: 16px;
         width: fit-content;
         height: fit-content;
-        max-width: 1080px;
+        max-width: fit-content;
         max-height: 32dvh;
         border-radius: 12px;
-        object-fit: cover;
+        object-fit: inherit;
     }
     .flexlink{
         display: block;
