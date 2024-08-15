@@ -240,6 +240,7 @@ main a{
 .notification p{
     margin: 12px 12px 6px 12px;
     font-size: 16px;
+    color: #252525;
 }
 .notification a{
     display: block;
