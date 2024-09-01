@@ -15,7 +15,7 @@ daichimarukana.comよりメールかTwitterのDMまでお願いします。
 [運営しているサービス一覧](https://daichimarukana.com/service/)  
 
 ## やってるSNSなど
-ここにあるSNSは連絡などにどうぞ！
+ここにあるSNSは連絡などにどうぞ！  
 [ゆずねっと](https://uwuzu.net/@daichimarukana)    
 [YouTube](https://www.youtube.com/channel/UCkilmFnwB_3pSMFsey6ZKrA)  
 [Twitter](https://twitter.com/daichimarukana)  
