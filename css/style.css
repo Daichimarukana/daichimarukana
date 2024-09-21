@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Cherry+Bomb+One&family=DotGothic16&family=Monomaniac+One&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&family=BIZ+UDPGothic:wght@400;700&family=Inter:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
 ::selection {
     background: #f51f75;
     color: #FFFFFF;
@@ -58,7 +58,7 @@ body{
     transform: translate(-50%, -50%);
     padding: 12px;
 
-    font-family:'Noto Sans JP', sans-serif;
+    font-family:"Inter", 'Noto Sans JP', sans-serif;
     color:#f5f5f5;
     text-shadow: 0 0px 15px rgba(0, 0, 0, .25);
     animation: top_text linear both;
@@ -176,7 +176,7 @@ header .links{
 header .links a{
     text-align: center;
     font-size: 18px;
-    font-family: 'BIZ UDPGothic', sans-serif;
+    font-family: "Inter", 'BIZ UDPGothic', sans-serif;
     font-weight: normal;
     color: #252525;
     text-decoration: none;
@@ -202,7 +202,7 @@ main h1{
     margin: 0px;
     font-size: 48px;
     color: #252525;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
     text-align: left;
 }
 main p{
@@ -210,13 +210,13 @@ main p{
     font-size: 16px;
     letter-spacing: 0.6px;
     color: #252525;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
     text-align: left;
 }
 main a{
     margin: 0px;
     font-size: 20px;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
     color: #f51f75;
     text-decoration: none;
     text-align: left;
@@ -230,6 +230,7 @@ main a{
     background-color: #FFF;
     border: solid 1px #ff3232;
     border-radius: 15px;
+    margin-bottom: 32px;
 }
 .notification h1{
     background-color: #ff3232;
@@ -250,8 +251,8 @@ main a{
 }
 
 .about_me{
-    padding-top: 128px;
-    margin-top: -128px;
+    padding-top: 0px;
+    margin-top: 0px;
 }
 .about_me .icon_img{
     width: 256px;
@@ -261,8 +262,8 @@ main a{
     margin-right: 0px;
 }
 .youtube{
-    padding-top: 128px;
-    margin-top: -128px;
+    padding-top: 0px;
+    margin-top: 0px;
 }
 .video-wrap {
     margin-top: 32px;
@@ -287,8 +288,8 @@ main a{
 }
 
 .sns{
-    padding-top: 128px;
-    margin-top: -128px;
+    padding-top: 0px;
+    margin-top: 0px;
 }
 .sns .flexbox{
     margin-top: 32px;
@@ -301,7 +302,7 @@ main a{
 }
 .sns .flexbox a{
     font-size: 26px;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
     font-weight: bold;
     margin-left: 48px;
     margin-right: 48px;
@@ -309,8 +310,8 @@ main a{
 }
 
 .service{
-    padding-top: 128px;
-    margin-top: -128px;
+    padding-top: 0px;
+    margin-top: 0px;
 }
 .service .service_img{
     width: fit-content;
@@ -334,13 +335,13 @@ main a{
 }
 
 .contact{
-    padding-top: 128px;
-    margin-top: -128px;
+    padding-top: 0px;
+    margin-top: 0px;
 }
 
 .support{
-    padding-top: 128px;
-    margin-top: -128px;
+    padding-top: 0px;
+    margin-top: 0px;
 }
 
 .link_button{
@@ -357,7 +358,7 @@ main a{
     transition: 500ms;
     padding: 8px 48px;
     font-size: 24px;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
     text-decoration: none;
     color: #fff;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .0);
@@ -405,7 +406,7 @@ main .service_box .right_text h1{
     margin: 0px;
     font-size: 32px;
     color: #252525;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
     text-align: left;
 }
 main .service_box .right_text p{
@@ -413,7 +414,7 @@ main .service_box .right_text p{
     margin-bottom: 22px;
     font-size: 18px;
     color: #252525;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
     text-align: left;
 }
 main .service_box .right_text .status{
@@ -451,7 +452,7 @@ main .service_box .right_text .status .text{
     line-height: 16px;
     font-size: 18px;
     color: #252525;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
     text-align: left;
 }
 
@@ -499,7 +500,7 @@ main .service_box .right_text .status .text{
     margin: 0px;
     font-size: 48px;
     color: #252525;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
     text-align: left;
 }
 .blog h2{
@@ -507,7 +508,7 @@ main .service_box .right_text .status .text{
     margin-top: 12px;
     font-size: 32px;
     color: #252525;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
     text-align: left;
 }
 .blog p{
@@ -516,13 +517,13 @@ main .service_box .right_text .status .text{
     font-size: 16px;
     letter-spacing: 0.6px;
     color: #252525;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
     text-align: left;
 }
 .blog a{
     margin: 0px;
     font-size: 16px;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
     color: #f51f75;
     text-decoration: none;
     text-align: left;
@@ -558,7 +559,7 @@ main .service_box .right_text .status .text{
     padding: 2px 8px;
     width: fit-content;
     background-color: #f51f75;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
     color: #FFF;
     text-decoration: none;
     text-align: left;
@@ -572,7 +573,7 @@ main .service_box .right_text .status .text{
     margin-bottom: 0px;
     padding: 2px 6px;
     
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
     color: #252525;
     text-decoration: none;
     text-align: left;
@@ -621,7 +622,7 @@ main .service_box .right_text .status .text{
     height: 156px;
 }
 .fleximglink .textbox h1{
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
     color: #252525;
     text-decoration: none;
     text-align: left;
@@ -629,7 +630,7 @@ main .service_box .right_text .status .text{
     font-size: 24px;
 }
 .fleximglink .textbox p{
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
     color: #252525;
     text-decoration: none;
     text-align: left;
@@ -651,7 +652,7 @@ main .service_box .right_text .status .text{
     height: 200px;
 }
 .cookie_main h3{
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
     color: #252525;
     text-decoration: none;
     text-align: center;
@@ -673,7 +674,7 @@ main .service_box .right_text .status .text{
     border-radius: 12px;
     padding: 12px;
 
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
     color: #252525;
     text-decoration: none;
     text-align: center;
@@ -806,7 +807,7 @@ main .service_box .right_text .status .text{
     }
     .sns .flexbox a{
         font-size: 26px;
-        font-family: 'Noto Sans JP', sans-serif;
+        font-family: "Inter", 'Noto Sans JP', sans-serif;
         font-weight: bold;
         margin-left: 16px;
         margin-right: 16px;
@@ -831,7 +832,7 @@ main .service_box .right_text .status .text{
     main .service_box .right_text a{
         margin: 0px;
         font-size: 20px;
-        font-family: 'Noto Sans JP', sans-serif;
+        font-family: "Inter", 'Noto Sans JP', sans-serif;
         color: #f51f75;
         text-decoration: none;
         text-align: left;
