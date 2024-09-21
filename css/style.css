@@ -320,19 +320,106 @@ main a{
     border-radius: 10px;
     margin-left: auto;
     margin-right: 0px;
+    margin-bottom: 16px;
 }
 .discord{
-    padding-top: 128px;
-    margin-top: -128px;
+    padding-top: 0px;
+    margin-top: 0px;
 }
-.discord .icon_img{
+.discord .flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 16px 0px;
+}
+.discord .flexbox .discord_block{
+    width: calc(100% / 2 - 16px);
+    height: fit-content;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+}
+.discord .flexbox .discord_block .background{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: fit-content;
+    max-height: 100dvh;
+    overflow: hidden;
+}
+.discord .flexbox .discord_block .background img{
+    margin: -5%;
+    width: 110%;
+    filter: saturate(150%) blur(6px);
+    overflow: hidden;
+    transition: 500ms ease-in-out;
+}
+.discord .flexbox .discord_block:hover .background img{
+    filter: saturate(200%) blur(24px);
+}
+.discord .flexbox .discord_block .discord_server{
+    width: calc(100% - 48px);
+    height: fit-content;
+    overflow: hidden;
+    overflow-wrap:break-word;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.discord .flexbox .discord_block .discord_server .icon_img{
     width: 128px;
     height:128px;
     object-fit: cover;
     border-radius: 50%;
-    margin-left: 0px;
+    margin-left: auto;
     margin-right: auto;
+    display: block;
 }
+.discord .flexbox .discord_block .discord_server h1{
+    color: #f8f8f8;
+    text-align: center;
+    font-size: 32px;
+}
+.discord .flexbox .discord_block .discord_server p{
+    color: #f8f8f8;
+    text-align: center;
+    font-size: 16px;
+}
+.discord .flexbox .discord_block .discord_server .link_button{
+    z-index: 9999;
+    display: block;
+
+    width: fit-content;
+    margin: 32px auto;
+    background-color: #5865F2;
+    border: solid 1px #5865F2;
+    border-radius: 50px;
+
+    transition: 500ms;
+    padding: 8px 48px;
+    font-size: 24px;
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .0);
+}
+.discord .flexbox .discord_block .discord_server .link_button:hover{
+    background-color: #FFF;
+    border: solid 1px #5865F2;
+    color: #5865F2;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .1);
+    padding: 8px 84px 8px 12px;
+}
+.discord .flexbox .discord_block .discord_server .link_button:active{
+    background-color: #5865F2;
+    border: solid 1px #5865F2;
+    color: #fff;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .0);
+    padding: 8px 74px 8px 12px;
+    font-size: 24px;
+}
+
 
 .contact{
     padding-top: 0px;
@@ -764,7 +851,7 @@ main .service_box .right_text .status .text{
         width:90%;
     }
     main h1{
-        font-size: 32px;
+        font-size: 48px;
     }
     main p{
         font-size: 16px;
@@ -772,6 +859,10 @@ main .service_box .right_text .status .text{
     main a{
         font-size: 16px;
     } 
+    
+    .about_me{
+        margin-top: 64px;
+    }
     .about_me p{
         width: 55%;
     }
@@ -796,6 +887,13 @@ main .service_box .right_text .status .text{
         margin-right: 0px;
     }
 
+    .youtube{
+        margin-top: 64px;
+    }
+
+    .sns{
+        margin-top: 64px;
+    }
     .sns .flexbox{
         margin-top: 32px;
         margin-left: auto;
@@ -814,6 +912,31 @@ main .service_box .right_text .status .text{
         line-height: 48px;
     }
 
+    .discord{
+        margin-top: 64px;
+    }
+    .discord .flexbox{
+        display: block;
+    }
+    .discord .flexbox .discord_block{
+        width: 100%;
+        margin: 16px auto;
+    }
+    .discord .flexbox .discord_block .discord_server .icon_img{
+        width: 96px;
+        height:96px;
+    }
+    .discord .flexbox .discord_block .discord_server .link_button{
+        margin-bottom: 0px;
+        font-size: 20px;
+    }
+    .discord .flexbox .discord_block .discord_server .link_button:active{
+        font-size: 18px;
+    }
+
+    .service{
+        margin-top: 64px;
+    }
     main .service_box img{
         width: 64px;
         height: 64px;
@@ -839,6 +962,13 @@ main .service_box .right_text .status .text{
         font-weight: bold;
     }
 
+    .contact{
+        margin-top: 64px;
+    }
+    
+    .support{
+        margin-top: 64px;
+    }
         
     .blog{
         margin-top:64px;
