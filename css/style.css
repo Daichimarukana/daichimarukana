@@ -792,6 +792,192 @@ main .service_box .right_text .status .text{
     vertical-align:middle;
 }
 
+.illust_main{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.illust_main h2{
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
+    color: #252525;
+    font-size: 32px;
+}
+.illust_main .illust_zone{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 16px;
+}
+.illust_main .illust_zone .illust_card{
+    width: calc(100% / 4 - 12px);
+    cursor: pointer;
+}
+.illust_main .illust_zone .illust_card img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-position: top;
+    border-radius: 10px;
+    object-fit: cover;
+    image-rendering: pixelated;
+    filter: saturate(100%);
+    transition: all 250ms ease-out;
+}
+.illust_main .illust_zone .illust_card img:hover{
+    filter: saturate(150%);
+}
+.illust_modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+    transition: all 250ms ease-out;
+}
+.illust_modal .modal{
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    width: fit-content;
+    max-height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0px 48px 0 rgba(0, 0, 0, .15);
+    overflow: hidden;
+}
+.illust_modal .modal .flexbox{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.illust_modal .modal .flexbox img{
+    background: linear-gradient(45deg, #CCC 25%, transparent 25%, transparent 75%, #CCC 75%), linear-gradient(45deg, #CCC 25%, transparent 25%, transparent 75%, #CCC 75%);
+    background-color: #FFF;
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    min-width: 320px;
+    width: fit-content;
+    height: 75dvh;
+    border-radius: 15px;
+}
+.illust_modal .modal .flexbox .about{
+    margin: 32px;
+    width: 20dvw;
+    overflow: scroll;
+    height: calc(75dvh - 128px);
+    overflow-wrap: anywhere;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.illust_modal .modal .flexbox .about h3{
+    margin-top: 0px;
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
+    color: #252525;
+    font-weight: bold;
+    font-size: 32px;
+}
+.illust_modal .modal .flexbox .about .infomation{
+    margin: 0px 0px 16px 0px;
+    padding: 0px;
+}
+.illust_modal .modal .flexbox .about .infomation p{
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    color: #252525;
+    font-size: 16px;
+}
+.illust_modal .modal .flexbox .about p{
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
+    color: #252525;
+    font-size: 16px;
+}
+.illust_modal .modal .flexbox .about #close_modal{
+    position: absolute;
+    bottom: 32px;
+    width: 48px;
+    height: 48px;
+    background-color: #FFFFFF;
+    border: solid 1px #CCC;
+    border-radius: 64px;
+    cursor: pointer;
+    font-size: 0;
+    transition: all 150ms 0s ease;
+}
+.illust_modal .modal .flexbox .about #close_modal:hover{
+    width: 52px;
+}
+.illust_modal .modal .flexbox .about #close_modal:active{
+    width: 44px;
+}
+.illust_modal .modal .flexbox .about #close_modal::before {
+    content: '×';
+    font-size: 32px;
+    line-height: 1;
+    color: #0c0c0c; 
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.illust_modal .modal .flexbox .about #ihopeseeit{
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+    width: 128px;
+    height: 48px;
+    background-color: #FFFFFF;
+    border: solid 1px #CCC;
+    font-size: 16px;
+    font-weight: bold;
+    color: #252525;
+    border-radius: 64px;
+    cursor: pointer;
+    transition: all 150ms 0s ease;
+}
+.illust_modal .modal .flexbox .about #ihopeseeit:hover{
+    width: 132px;
+}
+.illust_modal .modal .flexbox .about #ihopeseeit:active{
+    width: 124px;
+}
+
+.illust_modal .slideUp {
+    animation: SlideUp .3s ease-out forwards;
+}
+.illust_modal .slideDown {
+    animation: SlideDown .15s ease-in forwards;
+}
+@keyframes SlideUp {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -45%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+@keyframes SlideDown {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -45%);
+    }
+}
+
 @media screen and (max-width: 1080px) {
     .top_image{
         height: 100dvh;
@@ -1005,6 +1191,36 @@ main .service_box .right_text .status .text{
         width: auto;
         margin: 0px;
     }
+
+        
+    .illust_main .illust_zone{
+        gap: 16px;
+    }
+    .illust_main .illust_zone .illust_card{
+        width: calc(100% / 2 - 8px);
+    }
+    .illust_main .illust_zone .illust_card img{
+        border-radius: 15px;
+    }
+    .illust_modal .modal{
+        border-radius: 0px;
+        width: 100%;
+        max-height: none;
+        height: 100dvh;
+        overflow: scroll;
+    }
+    .illust_modal .modal .flexbox{
+        display: block;
+    }
+    .illust_modal .modal .flexbox img{
+        width: 100%;
+        height: fit-content;
+        border-radius: 0px 0px 15px 15px;
+    }
+    .illust_modal .modal .flexbox .about{
+        width: calc(100dvw - 64px);
+        height: calc(26dvh - 64px);
+    }
 }
 @media (prefers-color-scheme: dark) {
     body {
@@ -1116,5 +1332,27 @@ main .service_box .right_text .status .text{
         background-color: #000;
         box-shadow: 0 0px 5px 0 rgba(255,255,255, .0);
         filter: saturate(0);
+    }
+
+    .illust_main h2{
+        color: #f5f5f5;
+    }
+    .illust_modal .modal{
+        background-color: #252525;
+    }
+    .illust_modal .modal .flexbox img{
+        background: linear-gradient(45deg, #333 25%, transparent 25%, transparent 75%, #333 75%), linear-gradient(45deg, #333 25%, transparent 25%, transparent 75%, #333 75%);
+        background-color: #888;
+        background-size: 20px 20px;
+        background-position: 0 0, 10px 10px;
+    }
+    .illust_modal .modal .flexbox .about h3{
+        color: #f5f5f5;
+    }
+    .illust_modal .modal .flexbox .about .infomation p{
+        color: #f5f5f5;
+    }
+    .illust_modal .modal .flexbox .about p{
+        color: #f5f5f5;
     }
 }

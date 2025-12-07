@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<link rel="apple-touch-icon" type="image/png" href="/img/favicon/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/img/favicon/icon-192x192.png">
+<link rel="stylesheet" href="/css/style.css">
+<title>イラスト | だいちまるのさいと</title>
+</head>
+
+<header>
+    <div class="inheader">
+        <div class="logo">
+            <a href="/index.html"><img src="/img/daichimaru_logo.svg"></a>
+        </div>
+        <div class="links">
+            <a href="/index.html#aboutme">About Me</a>
+            <a href="/index.html#sns">SNS</a>
+            <a href="/illust/index.html">Illust</a>
+            <a href="/service/index.html">Service</a>
+            <a href="/index.html#contact">Contact Me</a>
+        </div>
+    </div>
+</header>
+<body>
+    <main>
+        <div class="main">
+            <h1>イラスト</h1>
+            <p>描いた物の展示場です。<br>
+                絵をクリックするとライセンス情報(？)などと共に拡大表示されます。<br>
+                絵がぼやけて表示されているものは閲覧が許可されていないものです(拡大して「みたーい」ボタンを押してコピーされた文字列を送ってくれれば見せないこともないですよ...)</p>
+            <div class="illust_main" id="illust_main">
+                
+            </div>
+            <p id="loading" style="text-align:center; display:none;">Loading...</p>
+
+            <div class="illust_modal" id="illust_modal" style="display: none;">
+                <div class="modal">
+                    <div class="flexbox">
+                        <img src="">
+                        <div class="about">
+                            <h3></h3>
+                            <div class="infomation">
+                                <p id="datetime"></p>
+                                <p id="license"></p>
+                                <p id="visibility"></p>
+                            </div>
+
+                            <p></p>  
+
+                            <button id="close_modal"></button>
+                            <button id="ihopeseeit">みたーい！</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                // 状態管理用の変数
+                let offset = 0;
+                const limit = 8; // 1回に取得する枚数
+                let isLoading = false;
+                let hasMore = true;
+                let lastRenderedMonth = null; // 最後に描画した「年月」を記憶する変数
+                let all_images = []; // モーダル表示用に全データを保持
+
+                function generateAndCombinePermitKey(image_uuid) {
+                    const cookieName = `permit_${image_uuid}`;
+                    let secureKey = null;
+
+                    const cookies = document.cookie.split(';');
+                    for (let i = 0; i < cookies.length; i++) {
+                        let cookie = cookies[i].trim();
+                        if (cookie.startsWith(cookieName + '=')) {
+                            secureKey = cookie.substring(cookieName.length + 1);
+                            break;
+                        }
+                    }
+
+                    if (!secureKey) {
+                        const keyLength = 32; 
+                        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_'; 
+                        
+                        let newKey = "";
+                        for (let i = 0; i < keyLength; i++) {
+                            newKey += characters.charAt(Math.floor(Math.random() * characters.length));
+                        }
+                        secureKey = newKey;
+
+                        const expirationDate = new Date();
+                        expirationDate.setDate(expirationDate.getDate() + 365);
+
+                        document.cookie = `${cookieName}=${secureKey}; expires=${expirationDate.toUTCString()}; path=/;`;
+                    }
+
+                    const combinedKey = `${image_uuid}__${secureKey}`;
+                    return combinedKey;
+                }
+
+                function getPermitImageURL(uuid, visibility, filePath) {
+                    const baseUrl = filePath; 
+                    if (visibility !== 'permit_required') {
+                        return baseUrl;
+                    }
+
+                    const cookieName = `permit_${uuid}`;
+                    let permitKey = null;
+
+                    const cookies = document.cookie.split(';');
+                    for (let i = 0; i < cookies.length; i++) {
+                        let cookie = cookies[i].trim();
+                        if (cookie.startsWith(cookieName + '=')) {
+                            permitKey = cookie.substring(cookieName.length + 1);
+                            break;
+                        }
+                    }
+
+                    if (permitKey) {
+                        return `${baseUrl}?key=${permitKey}`;
+                    } else {
+                        return baseUrl;
+                    }
+                }
+
+                function fetchImagesIndex() {
+                    if (isLoading || !hasMore) return;
+                    isLoading = true;
+                    $("#loading").show();
+
+                    $.ajax({
+                        url: `https://illust.daichimarukana.com/api/images/index?limit=${limit}&offset=${offset}`,
+                        method: "GET",
+                        dataType: "json"
+                    })
+                    .done(function (data) {
+                        if (data.images && data.images.length > 0) {
+                            renderImages(data.images);
+                            // 次回の読み込み位置を更新
+                            offset += data.images.length;
+                            hasMore = data.has_more;
+                        } else {
+                            hasMore = false;
+                        }
+                        
+                        ensureScrollableContent();
+                    })
+                    .fail(function (xhr, status, error) {
+                        console.error("Error fetching images:", error);
+                    })
+                    .always(function () {
+                        isLoading = false;
+                        if (!hasMore) $("#loading").hide();
+                    });
+                }
+
+                // 取得した画像リストを描画する処理
+                function renderImages(images) {
+                    all_images = all_images.concat(images);
+                    
+                    const lastZone = $("#illust_main").find(".illust_zone").last();
+                    if (lastZone.length > 0) {
+                        lastRenderedMonth = lastZone.data("month");
+                    } else {
+                        lastRenderedMonth = null;
+                    }
+
+                    images.forEach(function(image){
+                        const dateObj = new Date(image.created_at);
+                        const year = dateObj.getFullYear();
+                        const month = dateObj.getMonth() + 1;
+                        const monthKey = `${year}.${month}`;
+
+                        let currentZone = null;
+
+                        if (lastRenderedMonth !== monthKey) {
+                            const headerHtml = `<h2>${monthKey}</h2><div class="illust_zone" data-month="${monthKey}"></div>`;
+                            $("#illust_main").append(headerHtml);
+                            currentZone = $("#illust_main").find(`.illust_zone[data-month='${monthKey}']`).last();
+                            lastRenderedMonth = monthKey;
+                        } else {
+                            currentZone = $("#illust_main").find(".illust_zone").last();
+                        }
+                        
+                        if (currentZone && currentZone.length > 0) {
+                            const imageURL = getPermitImageURL(image.uuid, image.visibility, image.file_path);
+                            const card = `
+                                <div class="illust_card">
+                                    <img id="illust_img" 
+                                        src="${imageURL}" 
+                                        alt="${image.title || ''}" 
+                                        data-uuid="${image.uuid}">
+                                </div>`;
+                            currentZone.append(card);
+                        }
+                    });
+                }
+
+                // 画面の高さが足りない場合に追加読み込み（再帰呼び出しを安全に）
+                function ensureScrollableContent() {
+                    if (!hasMore) return;
+                    if ($(document).height() <= $(window).height() + 100) {
+                        fetchImagesIndex();
+                    }
+                }
+                // 初回ロード
+                fetchImagesIndex();
+                // スクロール検知
+                $(window).on("scroll", function () {
+                    if (isLoading || !hasMore) return;
+                    
+                    if ($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
+                        fetchImagesIndex();
+                    }
+                });
+
+                $("#illust_main").on("click", "#illust_img", function () {
+                    const uuid = $(this).data("uuid");
+                    const selectedImage = all_images.find(img => img.uuid === uuid);
+
+                    if (selectedImage) {
+                        const modalImg = $("#illust_modal img").first();
+                        const modalTitle = $("#illust_modal h3").first();
+                        const modalDate = $("#datetime");
+                        const modalLicense = $("#license");
+                        const modalVisibility = $("#visibility");
+                        const modalRequest_key = $("#request_key");
+                        const modalDesc = $("#illust_modal p").last();
+
+                        // 安全に要素へセット
+                        modalImg.attr("src", getPermitImageURL(selectedImage.uuid, selectedImage.visibility, selectedImage.file_path));
+                        modalTitle.text(selectedImage.title || "No Title");
+                        modalDate.text("Upload Date: " + new Date(selectedImage.created_at).toLocaleString());
+                        modalLicense.text("License: " + (selectedImage.permissions || "None"));
+                        modalVisibility.text("Visibility: " + (selectedImage.visibility || "public"));
+
+                        if(selectedImage.visibility == "permit_required"){
+                            $("#ihopeseeit").attr('data-key', generateAndCombinePermitKey(uuid));
+                            $("#ihopeseeit").show();
+                        }else{
+                            $("#ihopeseeit").hide();
+                        }
+                        
+                        // XSS対策をしつつ改行コードを<br>に
+                        const safeDesc = (selectedImage.description || "")
+                            .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+                            .replace(/\r\n/g, '<br>').replace(/\n/g, '<br>');
+                        modalDesc.html(safeDesc);
+
+                        $("#illust_modal").show();
+                        $("#illust_modal > div").removeClass("slideDown").addClass("slideUp");
+                    }
+                });
+
+                $('.modal').on('click', function(e) {
+                    e.stopPropagation();
+                });
+
+                function closeModal() {
+                    const modal = $("#illust_modal");
+                    const modalContent = modal.children(".modal");
+                    modalContent.removeClass("slideUp").addClass("slideDown");
+                    setTimeout(() => {
+                        modal.hide();
+                    }, 150);
+                }
+
+                // モーダルを閉じる
+                $("#illust_modal").on("click", function (e) {
+                    if ($(e.target).closest('.modal').length === 0) {
+                        closeModal();
+                    }
+                });
+
+                // モーダルを閉じる2
+                $("#close_modal").on("click", function () {
+                    closeModal();
+                });
+
+                $("#ihopeseeit").on("click", function () {
+                    if (!navigator.clipboard) {
+                        alert("以下のキーをだいちまるまで送ってください...！\n気分次第でお見せします...\n\n"+$(this).data("key")+"\n\n※現時点で画像がくっきりと表示されている場合、閲覧が許可されています。");
+                        return;
+                    }
+
+                    navigator.clipboard.writeText($(this).data("key")).then(
+                        () => {
+                            alert('今コピーされたキーをだいちまるまで送ってください...！\n気分次第でお見せします...\n\n※現時点で画像がくっきりと表示されている場合、閲覧が許可されています。');
+                        },
+                        () => {
+                            alert("以下のキーをだいちまるまで送ってください...！\n気分次第でお見せします...\n\n"+$(this).data("key")+"\n\n※現時点で画像がくっきりと表示されている場合、閲覧が許可されています。");
+                        });
+                });
+            });
+        </script>
+    </main>
+</body>
+<footer>
+    <p>&copy; 2022 - 2025 daichimarukana</p>
+    <a href="/rule/privacy_policy.html">プライバシーポリシー</p>
+    <a href="/rule/terms.html">利用規約</p>
+</footer>
+
+</html>
