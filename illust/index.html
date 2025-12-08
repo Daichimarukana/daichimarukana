@@ -185,7 +185,8 @@
                         }
                         
                         if (currentZone && currentZone.length > 0) {
-                            const imageURL = getPermitImageURL(image.uuid, image.visibility, image.file_path);
+                            const displayPath = image.thumbnail_path || image.file_path;
+                            const imageURL = getPermitImageURL(image.uuid, image.visibility, displayPath);
                             const card = `
                                 <div class="illust_card">
                                     <img id="illust_img" 
